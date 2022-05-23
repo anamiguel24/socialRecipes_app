@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 public class LoginAdapter extends FragmentPagerAdapter {
     private Context context;
     int totalTabs;
+    private String[] tabTitles = new String[]{"Log-in", "Sign-Up"};
 
     public LoginAdapter(FragmentManager fm, Context context, int totalTabs) {
         super(fm);
@@ -17,10 +18,16 @@ public class LoginAdapter extends FragmentPagerAdapter {
     }
 
     @Override
+    public CharSequence getPageTitle(int position) {
+        return tabTitles[position];
+    }
+
+    @Override
     public int getCount() {
         return totalTabs;
     }
 
+    @Override
     public Fragment getItem(int position){
         switch(position){
             case 0:
