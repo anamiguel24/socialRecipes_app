@@ -3,9 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/IHC/socialRecipes_app/repSocialApp/app/src/main/res/drawable/ic_baseline_shopping_cart_24.xml" value="0.186" />
+        <entry key="..\:/IHC/socialRecipes_app/repSocialApp/app/src/main/res/layout/activity_feed.xml" value="0.25" />
         <entry key="..\:/IHC/socialRecipes_app/repSocialApp/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/IHC/socialRecipes_app/repSocialApp/app/src/main/res/layout/login_tab_fragment.xml" value="0.25" />
         <entry key="..\:/IHC/socialRecipes_app/repSocialApp/app/src/main/res/layout/signup_tab_fragment.xml" value="0.25" />
+        <entry key="..\:/IHC/socialRecipes_app/repSocialApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25" />
         <entry key="..\:/Users/AnaMi/Desktop/3ano-2ndsemestre/IHC/Project/socialRecipes_app/repSocialApp/app/src/main/res/drawable/button_bg.xml" value="0.1" />
         <entry key="..\:/Users/AnaMi/Desktop/3ano-2ndsemestre/IHC/Project/socialRecipes_app/repSocialApp/app/src/main/res/drawable/text_bg.xml" value="0.1" />
         <entry key="..\:/Users/AnaMi/Desktop/3ano-2ndsemestre/IHC/Project/socialRecipes_app/repSocialApp/app/src/main/res/drawable/view_bg.xml" value="0.1" />
