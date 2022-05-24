@@ -14,6 +14,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.recipessocialapp.R;
 import com.example.recipessocialapp.feed.FeedActivity;
+import com.example.recipessocialapp.forgotpassword.ForgotPasswordActivity;
 
 public class LoginTabFragment extends Fragment {
     EditText email;
@@ -55,6 +56,13 @@ public class LoginTabFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getActivity(), FeedActivity.class));
+            }
+        });
+
+        forgetPass.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                startActivity(new Intent(getActivity(), ForgotPasswordActivity.class));
             }
         });
 
