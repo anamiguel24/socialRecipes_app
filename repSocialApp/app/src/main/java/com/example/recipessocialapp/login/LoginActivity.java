@@ -32,9 +32,7 @@ public class LoginActivity extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText("Log-in"),0);
         tabLayout.addTab(tabLayout.newTab().setText("Sign-up"),1);
 
-
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
-
 
 
         final LoginAdapter adapter = new LoginAdapter(getSupportFragmentManager(), this, tabLayout.getTabCount());
@@ -44,7 +42,6 @@ public class LoginActivity extends AppCompatActivity {
         tabLayout.setTranslationY(300);
         tabLayout.setAlpha(v);
         tabLayout.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(100).start();
-
     }
 
 

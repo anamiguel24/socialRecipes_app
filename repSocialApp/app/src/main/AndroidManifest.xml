@@ -27,6 +27,14 @@
         <activity
             android:name=".forgotpassword.ForgotPasswordActivity"
             android:label="Reset your password" />
+
+        <activity
+            android:name=".profilePages.myProfileActivity"
+            android:label="my profile" />
+
+        <activity
+            android:name=".profilePages.userProfileActivity"
+            android:label="user_name" />
     </application>
 
 </manifest>

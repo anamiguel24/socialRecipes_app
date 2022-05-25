@@ -1,13 +1,10 @@
-package com.example.recipessocialapp.feed;
+package com.example.recipessocialapp.profilePages;
 
 import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
-
-
 import com.example.recipessocialapp.databinding.ActivityFeedBinding;
 
-public class FeedActivity extends AppCompatActivity {
+public class userProfileActivity extends AppCompatActivity {
     private ActivityFeedBinding binding;
 
     @Override
