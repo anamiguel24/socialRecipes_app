@@ -10,7 +10,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintWidth_percent=".8"
-        app:layout_constraintVertical_bias=".3"
+        app:layout_constraintVertical_bias=".2"
         app:layout_constraintHorizontal_bias=".5"
         android:background="@drawable/text_bg"
         android:hint="Username"
@@ -88,7 +88,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pass2"
-        app:layout_constraintVertical_bias=".7"
+        app:layout_constraintVertical_bias=".5"
         app:layout_constraintWidth_percent=".8"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
