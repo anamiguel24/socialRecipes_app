@@ -569,6 +569,7 @@
 
 
     </ScrollView>
+    
     <androidx.cardview.widget.CardView
         android:id="@+id/PostCardbottombar"
         android:layout_width="match_parent"
@@ -580,12 +581,13 @@
         android:focusable="true"
         android:layout_alignParentBottom="true"
         app:cardCornerRadius="10dp">
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        app:menu="@menu/bottom_nav_menu">
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/bottom_nav_menu">
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
     </androidx.cardview.widget.CardView>
+
 
 </RelativeLayout>
