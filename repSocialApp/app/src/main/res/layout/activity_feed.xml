@@ -5,18 +5,35 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
     android:background="@color/gray"
-    android:paddingTop="16dp"
-    android:paddingRight="16dp"
-    android:paddingBottom="10dp"
     tools:context="com.example.recipessocialapp.feed.FeedActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:menu="@menu/top_menu"
+        app:titleTextColor="@android:color/white">
+
+        <ImageView
+            android:layout_width="105dp"
+            android:layout_height="50dp"
+            android:src="@drawable/yummy_logo"></ImageView>
+
+
+    </androidx.appcompat.widget.Toolbar>
 
     <ScrollView
         android:id="@+id/scroll_feed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
         android:layout_marginBottom="60dp">
 
         <LinearLayout
@@ -55,12 +72,12 @@
                         <TextView
                             android:id="@+id/RecipeName1"
                             android:layout_width="0dp"
-                            android:textColor="@color/teal_700"
-                            android:textStyle="bold"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
                             android:text="SUSHI"
-                            android:textSize="20dp" />
+                            android:textColor="@color/teal_700"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/padding1_1"
@@ -74,11 +91,11 @@
                             android:id="@+id/rating1"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:textColor="@color/teal_700"
                             android:layout_weight="0.3"
                             android:drawableLeft="@drawable/ic_baseline_star_24"
                             android:text="4.6 (249)"
                             android:textAlignment="viewEnd"
+                            android:textColor="@color/teal_700"
                             android:textSize="15dp" />
 
                     </LinearLayout>
@@ -110,10 +127,10 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="0.3"
-                            android:textColor="@color/teal_700"
                             android:drawableLeft="@drawable/ic_baseline_access_time_filled_24"
                             android:text="30 min"
-                            android:textAlignment="textEnd" />
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/teal_700" />
 
                     </LinearLayout>
 
@@ -128,8 +145,8 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="0.7"
-                            android:textColor="@color/teal_700"
-                            android:text="Friday, May 12 2022, 14:30" />
+                            android:text="Friday, May 12 2022, 14:30"
+                            android:textColor="@color/teal_700" />
 
                         <TextView
                             android:id="@+id/difficulty1"
@@ -138,8 +155,8 @@
                             android:layout_weight="0.3"
                             android:drawableLeft="@drawable/ic_baseline_signal_cellular_alt_24"
                             android:text="Hard"
-                            android:textColor="@color/teal_700"
-                            android:textAlignment="textEnd" />
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/teal_700" />
 
                     </LinearLayout>
 
@@ -147,18 +164,18 @@
                     <TextView
                         android:id="@+id/tags1"
                         android:layout_width="match_parent"
-                        android:textColor="@color/teal_700"
                         android:layout_height="wrap_content"
                         android:text="#Rice #Fish #Asian"
-                        android:textAlignment="textStart" />
+                        android:textAlignment="textStart"
+                        android:textColor="@color/teal_700" />
 
 
                     <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/image1"
                         android:layout_width="300dp"
                         android:layout_height="200dp"
-                        android:layout_margin="8dp"
                         android:layout_gravity="center"
+                        android:layout_margin="8dp"
                         app:srcCompat="@drawable/sushi1">
 
                     </androidx.appcompat.widget.AppCompatImageView>
@@ -175,10 +192,10 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="20"
-                            android:textColor="@color/teal_700"
                             android:drawableLeft="@drawable/ic_baseline_thumb_up_24"
                             android:text="190k"
                             android:textAlignment="center"
+                            android:textColor="@color/teal_700"
                             android:textSize="15dp" />
 
                         <TextView
@@ -186,10 +203,10 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="20"
-                            android:textColor="@color/teal_700"
                             android:drawableLeft="@drawable/ic_baseline_chat_bubble_24"
                             android:text="20k"
                             android:textAlignment="center"
+                            android:textColor="@color/teal_700"
                             android:textSize="15dp" />
 
                         <TextView
@@ -197,9 +214,9 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="15"
-                            android:textColor="@color/teal_700"
                             android:text=""
                             android:textAlignment="center"
+                            android:textColor="@color/teal_700"
                             android:textSize="15dp" />
 
                         <ImageView
@@ -208,6 +225,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="15"
                             app:srcCompat="@drawable/add_calendar" />
+
                         <ImageView
                             android:id="@+id/share1"
                             android:layout_width="0dp"
@@ -261,12 +279,12 @@
                         <TextView
                             android:id="@+id/RecipeName2"
                             android:layout_width="0dp"
-                            android:textColor="@color/teal_700"
-                            android:textStyle="bold"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
                             android:text="FRANCESINHA"
-                            android:textSize="20dp" />
+                            android:textColor="@color/teal_700"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/padding2_1"
@@ -280,11 +298,11 @@
                             android:id="@+id/rating2"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:textColor="@color/teal_700"
                             android:layout_weight="0.3"
                             android:drawableLeft="@drawable/ic_baseline_star_24"
                             android:text="4.1 (148)"
                             android:textAlignment="viewEnd"
+                            android:textColor="@color/teal_700"
                             android:textSize="15dp" />
 
                     </LinearLayout>
@@ -316,10 +334,10 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="0.3"
-                            android:textColor="@color/teal_700"
                             android:drawableLeft="@drawable/ic_baseline_access_time_filled_24"
                             android:text="45 min"
-                            android:textAlignment="textEnd" />
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/teal_700" />
 
                     </LinearLayout>
 
@@ -334,8 +352,8 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="0.7"
-                            android:textColor="@color/teal_700"
-                            android:text="Wednesday, May 10 2022, 23:34" />
+                            android:text="Wednesday, May 10 2022, 23:34"
+                            android:textColor="@color/teal_700" />
 
                         <TextView
                             android:id="@+id/difficulty2"
@@ -344,8 +362,8 @@
                             android:layout_weight="0.3"
                             android:drawableLeft="@drawable/ic_baseline_signal_cellular_alt_24"
                             android:text="Medium"
-                            android:textColor="@color/teal_700"
-                            android:textAlignment="textEnd" />
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/teal_700" />
 
                     </LinearLayout>
 
@@ -353,18 +371,18 @@
                     <TextView
                         android:id="@+id/tags2"
                         android:layout_width="match_parent"
-                        android:textColor="@color/teal_700"
                         android:layout_height="wrap_content"
                         android:text="#Portuguese"
-                        android:textAlignment="textStart" />
+                        android:textAlignment="textStart"
+                        android:textColor="@color/teal_700" />
 
 
                     <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/image2"
                         android:layout_width="300dp"
                         android:layout_height="200dp"
-                        android:layout_margin="8dp"
                         android:layout_gravity="center"
+                        android:layout_margin="8dp"
                         app:srcCompat="@drawable/francesinha">
 
                     </androidx.appcompat.widget.AppCompatImageView>
@@ -381,10 +399,10 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="20"
-                            android:textColor="@color/teal_700"
                             android:drawableLeft="@drawable/ic_baseline_thumb_up_24"
                             android:text="547k"
                             android:textAlignment="center"
+                            android:textColor="@color/teal_700"
                             android:textSize="15dp" />
 
                         <TextView
@@ -392,10 +410,10 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="20"
-                            android:textColor="@color/teal_700"
                             android:drawableLeft="@drawable/ic_baseline_chat_bubble_24"
                             android:text="2k"
                             android:textAlignment="center"
+                            android:textColor="@color/teal_700"
                             android:textSize="15dp" />
 
                         <TextView
@@ -403,9 +421,9 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="15"
-                            android:textColor="@color/teal_700"
                             android:text=""
                             android:textAlignment="center"
+                            android:textColor="@color/teal_700"
                             android:textSize="15dp" />
 
                         <ImageView
@@ -414,6 +432,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="15"
                             app:srcCompat="@drawable/add_calendar" />
+
                         <ImageView
                             android:id="@+id/share2"
                             android:layout_width="0dp"
@@ -467,12 +486,12 @@
                         <TextView
                             android:id="@+id/RecipeName3"
                             android:layout_width="0dp"
-                            android:textColor="@color/teal_700"
-                            android:textStyle="bold"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
                             android:text="HAMBURGER"
-                            android:textSize="20dp" />
+                            android:textColor="@color/teal_700"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/padding3_1"
@@ -486,11 +505,11 @@
                             android:id="@+id/rating3"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:textColor="@color/teal_700"
                             android:layout_weight="0.3"
                             android:drawableLeft="@drawable/ic_baseline_star_24"
                             android:text="4.8 (648)"
                             android:textAlignment="viewEnd"
+                            android:textColor="@color/teal_700"
                             android:textSize="15dp" />
 
                     </LinearLayout>
@@ -522,10 +541,10 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="0.3"
-                            android:textColor="@color/teal_700"
                             android:drawableLeft="@drawable/ic_baseline_access_time_filled_24"
                             android:text="20 min"
-                            android:textAlignment="textEnd" />
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/teal_700" />
 
                     </LinearLayout>
 
@@ -540,8 +559,8 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="0.7"
-                            android:textColor="@color/teal_700"
-                            android:text="Thursday, May 11 2022, 11:34" />
+                            android:text="Thursday, May 11 2022, 11:34"
+                            android:textColor="@color/teal_700" />
 
                         <TextView
                             android:id="@+id/difficulty3"
@@ -550,8 +569,8 @@
                             android:layout_weight="0.3"
                             android:drawableLeft="@drawable/ic_baseline_signal_cellular_alt_24"
                             android:text="Easy"
-                            android:textColor="@color/teal_700"
-                            android:textAlignment="textEnd" />
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/teal_700" />
 
                     </LinearLayout>
 
@@ -559,18 +578,18 @@
                     <TextView
                         android:id="@+id/tags3"
                         android:layout_width="match_parent"
-                        android:textColor="@color/teal_700"
                         android:layout_height="wrap_content"
                         android:text="#Fast #Unhealthy"
-                        android:textAlignment="textStart" />
+                        android:textAlignment="textStart"
+                        android:textColor="@color/teal_700" />
 
 
                     <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/image3"
                         android:layout_width="300dp"
                         android:layout_height="200dp"
-                        android:layout_margin="8dp"
                         android:layout_gravity="center"
+                        android:layout_margin="8dp"
                         app:srcCompat="@drawable/hamburger">
 
                     </androidx.appcompat.widget.AppCompatImageView>
@@ -587,10 +606,10 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="20"
-                            android:textColor="@color/teal_700"
                             android:drawableLeft="@drawable/ic_baseline_thumb_up_24"
                             android:text="547k"
                             android:textAlignment="center"
+                            android:textColor="@color/teal_700"
                             android:textSize="15dp" />
 
                         <TextView
@@ -598,10 +617,10 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="20"
-                            android:textColor="@color/teal_700"
                             android:drawableLeft="@drawable/ic_baseline_chat_bubble_24"
                             android:text="2k"
                             android:textAlignment="center"
+                            android:textColor="@color/teal_700"
                             android:textSize="15dp" />
 
                         <TextView
@@ -609,9 +628,9 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="15"
-                            android:textColor="@color/teal_700"
                             android:text=""
                             android:textAlignment="center"
+                            android:textColor="@color/teal_700"
                             android:textSize="15dp" />
 
                         <ImageView
@@ -620,6 +639,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="15"
                             app:srcCompat="@drawable/add_calendar" />
+
                         <ImageView
                             android:id="@+id/share3"
                             android:layout_width="0dp"
@@ -663,6 +683,8 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_alignParentBottom="true"
+            app:itemIconTint="@drawable/bottom_bar_selector"
+            app:itemTextColor="@drawable/bottom_bar_selector"
             app:menu="@menu/bottom_nav_menu">
         </com.google.android.material.bottomnavigation.BottomNavigationView>
     </androidx.cardview.widget.CardView>

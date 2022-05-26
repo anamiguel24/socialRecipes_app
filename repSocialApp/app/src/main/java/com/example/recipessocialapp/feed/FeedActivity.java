@@ -2,10 +2,13 @@ package com.example.recipessocialapp.feed;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 
 import com.example.recipessocialapp.R;
@@ -21,14 +24,6 @@ public class FeedActivity extends AppCompatActivity {
 
         binding = ActivityFeedBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
-        /*View home = findViewById(R.id.navigation_home);
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(FeedActivity.this,  FeedActivity.class));
-            }
-        });*/
 
         TextView user1 = findViewById(R.id.user1);
 
