@@ -59,7 +59,7 @@
                             android:textStyle="bold"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
-                            android:text="Lemon Soup"
+                            android:text="SUSHI"
                             android:textSize="20dp" />
 
                         <TextView
@@ -77,7 +77,7 @@
                             android:textColor="@color/teal_700"
                             android:layout_weight="0.25"
                             android:drawableLeft="@drawable/ic_baseline_star_24"
-                            android:text="4.9 (249)"
+                            android:text="4.6 (249)"
                             android:textAlignment="viewEnd"
                             android:textSize="15dp" />
 
@@ -94,7 +94,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
-                            android:text="\@florentino"
+                            android:text="\@noahflower"
                             android:textColor="@color/teal_700"
                             android:textSize="15dp" />
 
@@ -112,7 +112,7 @@
                             android:layout_weight="0.25"
                             android:textColor="@color/teal_700"
                             android:drawableLeft="@drawable/ic_baseline_access_time_filled_24"
-                            android:text="10 min"
+                            android:text="30 min"
                             android:textAlignment="textEnd" />
 
                     </LinearLayout>
@@ -137,7 +137,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="0.25"
                             android:drawableLeft="@drawable/ic_baseline_signal_cellular_alt_24"
-                            android:text="Medium"
+                            android:text="Hard"
                             android:textColor="@color/teal_700"
                             android:textAlignment="textEnd" />
 
@@ -149,7 +149,7 @@
                         android:layout_width="match_parent"
                         android:textColor="@color/teal_700"
                         android:layout_height="wrap_content"
-                        android:text="#Lemon #Carrot #Vegetarian #Green #Healthy"
+                        android:text="#Rice #Fish #Asian"
                         android:textAlignment="textStart" />
 
 
@@ -159,7 +159,7 @@
                         android:layout_height="200dp"
                         android:layout_margin="8dp"
                         android:layout_gravity="center"
-                        app:srcCompat="@drawable/soup">
+                        app:srcCompat="@drawable/sushi1">
 
                     </androidx.appcompat.widget.AppCompatImageView>
 

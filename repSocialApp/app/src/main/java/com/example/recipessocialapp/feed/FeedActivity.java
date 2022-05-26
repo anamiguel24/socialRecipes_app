@@ -31,6 +31,7 @@ public class FeedActivity extends AppCompatActivity {
         });*/
 
         TextView user1 = findViewById(R.id.user1);
+
         user1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
