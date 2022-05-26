@@ -259,7 +259,6 @@
             app:layout_constraintTop_toBottomOf="@+id/profileB"
             app:layout_constraintVertical_bias="0.266" />
 
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.cardview.widget.CardView>
@@ -282,7 +281,7 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/Card1"
-        android:layout_width="180dp"
+        android:layout_width="170dp"
         android:layout_height="180dp"
         android:layout_margin="8dp"
         android:layout_marginEnd="16dp"
@@ -298,7 +297,7 @@
 
             <ImageView
                 android:id="@+id/image_view1"
-                android:layout_width="180dp"
+                android:layout_width="170dp"
                 android:layout_height="140dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/sushi1"
@@ -308,7 +307,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <LinearLayout
-                android:layout_width="180dp"
+                android:layout_width="170dp"
                 android:layout_height="40dp"
                 android:orientation="vertical"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -323,7 +322,7 @@
 
                     <TextView
                         android:id="@+id/textView1"
-                        android:layout_width="130dp"
+                        android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:text="Sushi"
@@ -425,7 +424,7 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/Card2"
-        android:layout_width="180dp"
+        android:layout_width="170dp"
         android:layout_height="180dp"
         android:layout_margin="8dp"
         android:layout_marginStart="16dp"
@@ -441,7 +440,7 @@
 
             <ImageView
                 android:id="@+id/image_view2"
-                android:layout_width="180dp"
+                android:layout_width="170dp"
                 android:layout_height="140dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/salmon"
@@ -451,7 +450,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <LinearLayout
-                android:layout_width="180dp"
+                android:layout_width="170dp"
                 android:layout_height="40dp"
                 android:orientation="vertical"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -466,7 +465,7 @@
 
                     <TextView
                         android:id="@+id/name2"
-                        android:layout_width="130dp"
+                        android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:text="Salmon"

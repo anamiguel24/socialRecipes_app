@@ -7,10 +7,10 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-
 import com.example.recipessocialapp.R;
 import com.example.recipessocialapp.databinding.ActivityFeedBinding;
 import com.example.recipessocialapp.profilePages.UserProfileActivity;
+import com.example.recipessocialapp.profilePages.myProfileActivity;
 
 public class FeedActivity extends AppCompatActivity {
     private ActivityFeedBinding binding;
@@ -54,6 +54,14 @@ public class FeedActivity extends AppCompatActivity {
                 startActivity(new Intent(FeedActivity.this,  UserProfileActivity.class));
             }
         });
+
+/*        TextView myprofile = findViewById(R.id.navigation_myprofile);
+        myprofile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(FeedActivity.this,  myProfileActivity.class));
+            }
+        });*/
 
 
     }
