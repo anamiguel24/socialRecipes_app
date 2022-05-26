@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="#e4e4e4"
-    tools:context=".profilePages.userProfileActivity"
+    tools:context=".profilePages.UserProfileActivity"
     tools:ignore="HardcodedText">
 
 <View
@@ -242,7 +242,7 @@
 
         </LinearLayout>
 
-<!--        <com.google.android.material.button.MaterialButton
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/followB"
             android:layout_width="90dp"
             android:layout_height="33dp"
@@ -255,7 +255,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/profileB"
-            app:layout_constraintVertical_bias="0.083" />-->
+            app:layout_constraintVertical_bias="0.083" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -55,6 +55,8 @@
                         <TextView
                             android:id="@+id/RecipeName1"
                             android:layout_width="0dp"
+                            android:textColor="@color/teal_700"
+                            android:textStyle="bold"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
                             android:text="Lemon Soup"
@@ -72,6 +74,7 @@
                             android:id="@+id/rating1"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
+                            android:textColor="@color/teal_700"
                             android:layout_weight="0.25"
                             android:drawableLeft="@drawable/ic_baseline_star_24"
                             android:text="4.9 (249)"
@@ -92,6 +95,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
                             android:text="\@florentino"
+                            android:textColor="@color/teal_700"
                             android:textSize="15dp" />
 
                         <TextView
@@ -106,6 +110,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="0.25"
+                            android:textColor="@color/teal_700"
                             android:drawableLeft="@drawable/ic_baseline_access_time_filled_24"
                             android:text="10 min"
                             android:textAlignment="textEnd" />
@@ -123,6 +128,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="0.75"
+                            android:textColor="@color/teal_700"
                             android:text="Friday, May 12 2022, 14:30" />
 
                         <TextView
@@ -132,6 +138,7 @@
                             android:layout_weight="0.25"
                             android:drawableLeft="@drawable/ic_baseline_signal_cellular_alt_24"
                             android:text="Medium"
+                            android:textColor="@color/teal_700"
                             android:textAlignment="textEnd" />
 
                     </LinearLayout>
@@ -140,6 +147,7 @@
                     <TextView
                         android:id="@+id/tags1"
                         android:layout_width="match_parent"
+                        android:textColor="@color/teal_700"
                         android:layout_height="wrap_content"
                         android:text="#Lemon #Carrot #Vegetarian #Green #Healthy"
                         android:textAlignment="textStart" />
@@ -167,6 +175,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="25"
+                            android:textColor="@color/teal_700"
                             android:drawableLeft="@drawable/ic_baseline_thumb_up_24"
                             android:text="190k"
                             android:textAlignment="center"
@@ -177,6 +186,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="25"
+                            android:textColor="@color/teal_700"
                             android:drawableLeft="@drawable/ic_baseline_chat_bubble_24"
                             android:text="20k"
                             android:textAlignment="center"

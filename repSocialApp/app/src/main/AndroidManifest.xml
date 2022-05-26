@@ -33,7 +33,7 @@
             android:label="my profile" />
 
         <activity
-            android:name=".profilePages.userProfileActivity"
+            android:name=".profilePages.UserProfileActivity"
             android:label="user_name" />
     </application>
 
