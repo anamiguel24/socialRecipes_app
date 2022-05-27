@@ -39,6 +39,10 @@
         <activity
             android:name=".weeklyplan.WeeklyPlanActivity"
             android:label="Weekly Plan" />
+
+        <activity
+            android:name=".feed.PostActvity"
+            android:label="Post" />
     </application>
 
 </manifest>
