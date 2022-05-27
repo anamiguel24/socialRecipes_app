@@ -7,7 +7,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="#e4e4e4"
-    tools:context=".profilePages.UserProfileActivity"
+    tools:context=".profilePages.MyProfileActivity"
     tools:ignore="HardcodedText">
 
 <View
@@ -39,7 +39,7 @@
     android:layout_marginTop="16dp"
     android:gravity="center_horizontal"
     android:letterSpacing="0.025"
-    android:text="/@noahflower"
+    android:text="\@noahflower"
     android:textColor="@color/white"
     android:textSize="28sp"
     android:textStyle="bold"
@@ -271,8 +271,9 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="195dp"
-        android:layout_marginBottom="70dp">
+        android:layout_marginTop="200dp"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="60dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -1197,9 +1198,12 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
+        android:id="@+id/bottom_bar"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@drawable/bottom_bar_selector"
+        app:itemTextColor="@drawable/bottom_bar_selector"
 
         ></com.google.android.material.bottomnavigation.BottomNavigationView>
     </androidx.cardview.widget.CardView>

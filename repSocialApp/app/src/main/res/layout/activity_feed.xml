@@ -32,9 +32,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="55dp"
+        android:layout_marginBottom="65dp"
         android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:layout_marginBottom="65dp">
+        android:paddingRight="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -65,7 +65,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="25dp"
                         android:orientation="horizontal"
                         android:weightSum="1">
 
@@ -73,36 +73,35 @@
                             android:id="@+id/RecipeName1"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="0.5"
+                            android:layout_weight="0.7"
                             android:text="SUSHI"
                             android:textColor="@color/teal_700"
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
-                        <TextView
-                            android:id="@+id/padding1_1"
+                        <ImageView
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="0.20"
-                            android:text=""
-                            android:textSize="20dp" />
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1"
+                            android:src="@drawable/ic_baseline_star_24">
+
+                        </ImageView>
 
                         <TextView
                             android:id="@+id/rating1"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="0.3"
-                            android:drawableLeft="@drawable/ic_baseline_star_24"
+                            android:layout_weight="0.2"
                             android:text="4.6 (249)"
                             android:textAlignment="viewEnd"
-                            android:textColor="@color/teal_700"
+                            android:textColor="@color/black"
                             android:textSize="15dp" />
 
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="20dp"
                         android:orientation="horizontal"
                         android:weightSum="1">
 
@@ -110,33 +109,33 @@
                             android:id="@+id/user1"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="0.5"
+                            android:layout_weight="0.7"
                             android:text="\@noahflower"
-                            android:textColor="@color/teal_700"
+                            android:textColor="@color/black"
                             android:textSize="15dp" />
 
-                        <TextView
-                            android:id="@+id/padding1_2"
+                        <ImageView
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="0.20"
-                            android:text="" />
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1"
+                            android:src="@drawable/ic_baseline_access_time_filled_24">
+
+                        </ImageView>
 
                         <TextView
                             android:id="@+id/preparation1"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="0.3"
-                            android:drawableLeft="@drawable/ic_baseline_access_time_filled_24"
+                            android:layout_weight="0.2"
                             android:text="30 min"
                             android:textAlignment="textEnd"
-                            android:textColor="@color/teal_700" />
+                            android:textColor="@color/black" />
 
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="20dp"
                         android:orientation="horizontal"
                         android:weightSum="1">
 
@@ -146,17 +145,22 @@
                             android:layout_height="match_parent"
                             android:layout_weight="0.7"
                             android:text="Friday, May 12 2022, 14:30"
-                            android:textColor="@color/teal_700" />
+                            android:textColor="@color/black" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1"
+                            android:src="@drawable/ic_baseline_signal_cellular_alt_24"></ImageView>
 
                         <TextView
                             android:id="@+id/difficulty1"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="0.3"
-                            android:drawableLeft="@drawable/ic_baseline_signal_cellular_alt_24"
+                            android:layout_weight="0.2"
                             android:text="Hard"
                             android:textAlignment="textEnd"
-                            android:textColor="@color/teal_700" />
+                            android:textColor="@color/black" />
 
                     </LinearLayout>
 
@@ -167,7 +171,7 @@
                         android:layout_height="wrap_content"
                         android:text="#Rice #Fish #Asian"
                         android:textAlignment="textStart"
-                        android:textColor="@color/teal_700" />
+                        android:textColor="@color/black" />
 
 
                     <androidx.appcompat.widget.AppCompatImageView
@@ -182,38 +186,51 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="25dp"
                         android:orientation="horizontal"
                         android:weightSum="100">
 
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:src="@drawable/ic_baseline_thumb_up_24">
+
+                        </ImageView>
 
                         <TextView
                             android:id="@+id/likes1"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="20"
-                            android:drawableLeft="@drawable/ic_baseline_thumb_up_24"
+                            android:layout_weight="10"
                             android:text="190k"
                             android:textAlignment="center"
-                            android:textColor="@color/teal_700"
+                            android:textColor="@color/black"
                             android:textSize="15dp" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:src="@drawable/ic_baseline_chat_bubble_24">
+
+                        </ImageView>
 
                         <TextView
                             android:id="@+id/comments1"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="20"
-                            android:drawableLeft="@drawable/ic_baseline_chat_bubble_24"
+                            android:layout_weight="10"
                             android:text="20k"
                             android:textAlignment="center"
-                            android:textColor="@color/teal_700"
+                            android:textColor="@color/black"
                             android:textSize="15dp" />
 
                         <TextView
-                            android:id="@+id/padding1_3"
+                            android:id="@+id/padding1"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="15"
+                            android:layout_weight="30"
                             android:text=""
                             android:textAlignment="center"
                             android:textColor="@color/teal_700"
@@ -223,21 +240,21 @@
                             android:id="@+id/addcalendar"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="15"
+                            android:layout_weight="10"
                             app:srcCompat="@drawable/add_calendar" />
 
                         <ImageView
                             android:id="@+id/share1"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="15"
+                            android:layout_weight="10"
                             app:srcCompat="@drawable/ic_baseline_share_24" />
 
                         <ImageView
                             android:id="@+id/save1"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="15"
+                            android:layout_weight="10"
                             app:srcCompat="@drawable/ic_baseline_bookmark_24" />
 
 
@@ -272,7 +289,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="25dp"
                         android:orientation="horizontal"
                         android:weightSum="1">
 
@@ -280,36 +297,35 @@
                             android:id="@+id/RecipeName2"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="0.5"
-                            android:text="FRANCESINHA"
+                            android:layout_weight="0.7"
+                            android:text="SUSHI"
                             android:textColor="@color/teal_700"
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
-                        <TextView
-                            android:id="@+id/padding2_1"
+                        <ImageView
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="0.2"
-                            android:text=""
-                            android:textSize="20dp" />
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1"
+                            android:src="@drawable/ic_baseline_star_24">
+
+                        </ImageView>
 
                         <TextView
                             android:id="@+id/rating2"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="0.3"
-                            android:drawableLeft="@drawable/ic_baseline_star_24"
-                            android:text="4.1 (148)"
+                            android:layout_weight="0.2"
+                            android:text="4.6 (249)"
                             android:textAlignment="viewEnd"
-                            android:textColor="@color/teal_700"
+                            android:textColor="@color/black"
                             android:textSize="15dp" />
 
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="20dp"
                         android:orientation="horizontal"
                         android:weightSum="1">
 
@@ -317,33 +333,33 @@
                             android:id="@+id/user2"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="0.5"
+                            android:layout_weight="0.7"
                             android:text="\@noahflower"
-                            android:textColor="@color/teal_700"
+                            android:textColor="@color/black"
                             android:textSize="15dp" />
 
-                        <TextView
-                            android:id="@+id/padding2_2"
+                        <ImageView
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="0.2"
-                            android:text="" />
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1"
+                            android:src="@drawable/ic_baseline_access_time_filled_24">
+
+                        </ImageView>
 
                         <TextView
                             android:id="@+id/preparation2"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="0.3"
-                            android:drawableLeft="@drawable/ic_baseline_access_time_filled_24"
-                            android:text="45 min"
+                            android:layout_weight="0.2"
+                            android:text="30 min"
                             android:textAlignment="textEnd"
-                            android:textColor="@color/teal_700" />
+                            android:textColor="@color/black" />
 
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="20dp"
                         android:orientation="horizontal"
                         android:weightSum="1">
 
@@ -352,18 +368,23 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="0.7"
-                            android:text="Wednesday, May 10 2022, 23:34"
-                            android:textColor="@color/teal_700" />
+                            android:text="Friday, May 12 2022, 14:30"
+                            android:textColor="@color/black" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1"
+                            android:src="@drawable/ic_baseline_signal_cellular_alt_24"></ImageView>
 
                         <TextView
                             android:id="@+id/difficulty2"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="0.3"
-                            android:drawableLeft="@drawable/ic_baseline_signal_cellular_alt_24"
-                            android:text="Medium"
+                            android:layout_weight="0.2"
+                            android:text="Hard"
                             android:textAlignment="textEnd"
-                            android:textColor="@color/teal_700" />
+                            android:textColor="@color/black" />
 
                     </LinearLayout>
 
@@ -372,9 +393,9 @@
                         android:id="@+id/tags2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="#Portuguese"
+                        android:text="#Rice #Fish #Asian"
                         android:textAlignment="textStart"
-                        android:textColor="@color/teal_700" />
+                        android:textColor="@color/black" />
 
 
                     <androidx.appcompat.widget.AppCompatImageView
@@ -383,44 +404,57 @@
                         android:layout_height="200dp"
                         android:layout_gravity="center"
                         android:layout_margin="8dp"
-                        app:srcCompat="@drawable/francesinha">
+                        app:srcCompat="@drawable/sushi1">
 
                     </androidx.appcompat.widget.AppCompatImageView>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="25dp"
                         android:orientation="horizontal"
                         android:weightSum="100">
 
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:src="@drawable/ic_baseline_thumb_up_24">
+
+                        </ImageView>
 
                         <TextView
                             android:id="@+id/likes2"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="20"
-                            android:drawableLeft="@drawable/ic_baseline_thumb_up_24"
-                            android:text="547k"
+                            android:layout_weight="10"
+                            android:text="190k"
                             android:textAlignment="center"
-                            android:textColor="@color/teal_700"
+                            android:textColor="@color/black"
                             android:textSize="15dp" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:src="@drawable/ic_baseline_chat_bubble_24">
+
+                        </ImageView>
 
                         <TextView
                             android:id="@+id/comments2"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="20"
-                            android:drawableLeft="@drawable/ic_baseline_chat_bubble_24"
-                            android:text="2k"
+                            android:layout_weight="10"
+                            android:text="20k"
                             android:textAlignment="center"
-                            android:textColor="@color/teal_700"
+                            android:textColor="@color/black"
                             android:textSize="15dp" />
 
                         <TextView
-                            android:id="@+id/padding2_3"
+                            android:id="@+id/padding2"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="15"
+                            android:layout_weight="30"
                             android:text=""
                             android:textAlignment="center"
                             android:textColor="@color/teal_700"
@@ -430,21 +464,21 @@
                             android:id="@+id/addcalendar2"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="15"
+                            android:layout_weight="10"
                             app:srcCompat="@drawable/add_calendar" />
 
                         <ImageView
                             android:id="@+id/share2"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="15"
+                            android:layout_weight="10"
                             app:srcCompat="@drawable/ic_baseline_share_24" />
 
                         <ImageView
                             android:id="@+id/save2"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="15"
+                            android:layout_weight="10"
                             app:srcCompat="@drawable/ic_baseline_bookmark_24" />
 
 
@@ -479,7 +513,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="25dp"
                         android:orientation="horizontal"
                         android:weightSum="1">
 
@@ -487,36 +521,35 @@
                             android:id="@+id/RecipeName3"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="0.5"
-                            android:text="HAMBURGER"
+                            android:layout_weight="0.7"
+                            android:text="SUSHI"
                             android:textColor="@color/teal_700"
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
-                        <TextView
-                            android:id="@+id/padding3_1"
+                        <ImageView
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="0.2"
-                            android:text=""
-                            android:textSize="20dp" />
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1"
+                            android:src="@drawable/ic_baseline_star_24">
+
+                        </ImageView>
 
                         <TextView
                             android:id="@+id/rating3"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="0.3"
-                            android:drawableLeft="@drawable/ic_baseline_star_24"
-                            android:text="4.8 (648)"
+                            android:layout_weight="0.2"
+                            android:text="4.6 (249)"
                             android:textAlignment="viewEnd"
-                            android:textColor="@color/teal_700"
+                            android:textColor="@color/black"
                             android:textSize="15dp" />
 
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="20dp"
                         android:orientation="horizontal"
                         android:weightSum="1">
 
@@ -524,33 +557,33 @@
                             android:id="@+id/user3"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="0.5"
+                            android:layout_weight="0.7"
                             android:text="\@noahflower"
-                            android:textColor="@color/teal_700"
+                            android:textColor="@color/black"
                             android:textSize="15dp" />
 
-                        <TextView
-                            android:id="@+id/padding3_2"
+                        <ImageView
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="0.2"
-                            android:text="" />
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1"
+                            android:src="@drawable/ic_baseline_access_time_filled_24">
+
+                        </ImageView>
 
                         <TextView
                             android:id="@+id/preparation3"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="0.3"
-                            android:drawableLeft="@drawable/ic_baseline_access_time_filled_24"
-                            android:text="20 min"
+                            android:layout_weight="0.2"
+                            android:text="30 min"
                             android:textAlignment="textEnd"
-                            android:textColor="@color/teal_700" />
+                            android:textColor="@color/black" />
 
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="20dp"
                         android:orientation="horizontal"
                         android:weightSum="1">
 
@@ -559,18 +592,23 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="0.7"
-                            android:text="Thursday, May 11 2022, 11:34"
-                            android:textColor="@color/teal_700" />
+                            android:text="Friday, May 12 2022, 14:30"
+                            android:textColor="@color/black" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1"
+                            android:src="@drawable/ic_baseline_signal_cellular_alt_24"></ImageView>
 
                         <TextView
                             android:id="@+id/difficulty3"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="0.3"
-                            android:drawableLeft="@drawable/ic_baseline_signal_cellular_alt_24"
-                            android:text="Easy"
+                            android:layout_weight="0.2"
+                            android:text="Hard"
                             android:textAlignment="textEnd"
-                            android:textColor="@color/teal_700" />
+                            android:textColor="@color/black" />
 
                     </LinearLayout>
 
@@ -579,9 +617,9 @@
                         android:id="@+id/tags3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="#Fast #Unhealthy"
+                        android:text="#Rice #Fish #Asian"
                         android:textAlignment="textStart"
-                        android:textColor="@color/teal_700" />
+                        android:textColor="@color/black" />
 
 
                     <androidx.appcompat.widget.AppCompatImageView
@@ -590,44 +628,57 @@
                         android:layout_height="200dp"
                         android:layout_gravity="center"
                         android:layout_margin="8dp"
-                        app:srcCompat="@drawable/hamburger">
+                        app:srcCompat="@drawable/sushi1">
 
                     </androidx.appcompat.widget.AppCompatImageView>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="25dp"
                         android:orientation="horizontal"
                         android:weightSum="100">
 
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:src="@drawable/ic_baseline_thumb_up_24">
+
+                        </ImageView>
 
                         <TextView
                             android:id="@+id/likes3"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="20"
-                            android:drawableLeft="@drawable/ic_baseline_thumb_up_24"
-                            android:text="547k"
+                            android:layout_weight="10"
+                            android:text="190k"
                             android:textAlignment="center"
-                            android:textColor="@color/teal_700"
+                            android:textColor="@color/black"
                             android:textSize="15dp" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:src="@drawable/ic_baseline_chat_bubble_24">
+
+                        </ImageView>
 
                         <TextView
                             android:id="@+id/comments3"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="20"
-                            android:drawableLeft="@drawable/ic_baseline_chat_bubble_24"
-                            android:text="2k"
+                            android:layout_weight="10"
+                            android:text="20k"
                             android:textAlignment="center"
-                            android:textColor="@color/teal_700"
+                            android:textColor="@color/black"
                             android:textSize="15dp" />
 
                         <TextView
-                            android:id="@+id/padding3_3"
+                            android:id="@+id/padding3"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="15"
+                            android:layout_weight="30"
                             android:text=""
                             android:textAlignment="center"
                             android:textColor="@color/teal_700"
@@ -637,21 +688,244 @@
                             android:id="@+id/addcalendar3"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="15"
+                            android:layout_weight="10"
                             app:srcCompat="@drawable/add_calendar" />
 
                         <ImageView
                             android:id="@+id/share3"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="15"
+                            android:layout_weight="10"
                             app:srcCompat="@drawable/ic_baseline_share_24" />
 
                         <ImageView
                             android:id="@+id/save3"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="15"
+                            android:layout_weight="10"
+                            app:srcCompat="@drawable/ic_baseline_bookmark_24" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/PostCard4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_marginEnd="16dp"
+                android:clickable="true"
+                android:elevation="12dp"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/RecipeName4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:text="SUSHI"
+                            android:textColor="@color/teal_700"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1"
+                            android:src="@drawable/ic_baseline_star_24">
+
+                        </ImageView>
+                        <TextView
+                            android:id="@+id/rating4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:text="4.6 (249)"
+                            android:textAlignment="viewEnd"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/user4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:text="\@noahflower"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1"
+                            android:src="@drawable/ic_baseline_access_time_filled_24">
+
+                        </ImageView>
+                        <TextView
+                            android:id="@+id/preparation4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:text="30 min"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/date4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:text="Friday, May 12 2022, 14:30"
+                            android:textColor="@color/black" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1"
+                            android:src="@drawable/ic_baseline_signal_cellular_alt_24">
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/difficulty4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:text="Hard"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/tags4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="#Rice #Fish #Asian"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black" />
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/image4"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        app:srcCompat="@drawable/sushi1">
+
+                    </androidx.appcompat.widget.AppCompatImageView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:src="@drawable/ic_baseline_thumb_up_24">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/likes4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="10"
+                            android:text="190k"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:src="@drawable/ic_baseline_chat_bubble_24">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/comments4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="10"
+                            android:text="20k"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/padding4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="30"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="@color/teal_700"
+                            android:textSize="15dp" />
+
+                        <ImageView
+                            android:id="@+id/addcalendar4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            app:srcCompat="@drawable/add_calendar" />
+
+                        <ImageView
+                            android:id="@+id/share4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            app:srcCompat="@drawable/ic_baseline_share_24" />
+
+                        <ImageView
+                            android:id="@+id/save4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
                             app:srcCompat="@drawable/ic_baseline_bookmark_24" />
 
 
@@ -680,6 +954,7 @@
         android:layout_alignParentBottom="true"
         app:cardCornerRadius="10dp">
         <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_bar"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_alignParentBottom="true"

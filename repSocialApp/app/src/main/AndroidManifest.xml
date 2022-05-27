@@ -29,12 +29,16 @@
             android:label="Reset your password" />
 
         <activity
-            android:name=".profilePages.myProfileActivity"
+            android:name=".profilePages.MyProfileActivity"
             android:label="my profile" />
 
         <activity
             android:name=".profilePages.UserProfileActivity"
             android:label="user_name" />
+
+        <activity
+            android:name=".weeklyplan.WeeklyPlanActivity"
+            android:label="Weekly Plan" />
     </application>
 
 </manifest>

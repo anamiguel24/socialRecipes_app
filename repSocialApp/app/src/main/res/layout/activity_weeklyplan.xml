@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/gray"
-    tools:context="com.example.recipessocialapp.feed.FeedActivity">
+    tools:context="com.example.recipessocialapp.weeklyplan.WeeklyPlanActivity">
 <!--    mudar a linha de cima-->
     <!--
     android:paddingLeft="16dp"
@@ -2457,8 +2457,11 @@
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:layout_width="match_parent"
+            android:id="@+id/bottom_bar"
             android:layout_height="50dp"
             android:layout_alignParentBottom="true"
+            app:itemIconTint="@drawable/bottom_bar_selector"
+            app:itemTextColor="@drawable/bottom_bar_selector"
             app:menu="@menu/bottom_nav_menu"></com.google.android.material.bottomnavigation.BottomNavigationView>
     </androidx.cardview.widget.CardView>
 

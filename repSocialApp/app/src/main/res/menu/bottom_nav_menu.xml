@@ -16,7 +16,7 @@
         android:title="New" />
 
     <item
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_calendar"
         android:icon="@drawable/ic_baseline_calendar_today_24"
         android:title="Calendar" />
 
