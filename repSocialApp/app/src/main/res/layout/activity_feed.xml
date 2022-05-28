@@ -144,7 +144,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="0.7"
-                            android:text="Friday, May 12 2022, 14:30"
+                            android:text="Friday, May 20 2022, 14:30"
                             android:textColor="@color/black" />
 
                         <ImageView
@@ -203,7 +203,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="10"
-                            android:text="190k"
+                            android:text="189k"
                             android:textAlignment="center"
                             android:textColor="@color/black"
                             android:textSize="15dp" />
@@ -221,7 +221,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="10"
-                            android:text="20k"
+                            android:text="2k"
                             android:textAlignment="center"
                             android:textColor="@color/black"
                             android:textSize="15dp" />
@@ -298,7 +298,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.7"
-                            android:text="SUSHI"
+                            android:text="Mozzarella pizza"
                             android:textColor="@color/teal_700"
                             android:textSize="20dp"
                             android:textStyle="bold" />
@@ -316,7 +316,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="0.2"
-                            android:text="4.6 (249)"
+                            android:text="4.2 (2049)"
                             android:textAlignment="viewEnd"
                             android:textColor="@color/black"
                             android:textSize="15dp" />
@@ -334,7 +334,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.7"
-                            android:text="\@noahflower"
+                            android:text="\@jennifer21"
                             android:textColor="@color/black"
                             android:textSize="15dp" />
 
@@ -351,7 +351,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="0.2"
-                            android:text="30 min"
+                            android:text="50 min"
                             android:textAlignment="textEnd"
                             android:textColor="@color/black" />
 
@@ -368,7 +368,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="0.7"
-                            android:text="Friday, May 12 2022, 14:30"
+                            android:text="Friday, May 20 2022, 11:36"
                             android:textColor="@color/black" />
 
                         <ImageView
@@ -382,7 +382,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="0.2"
-                            android:text="Hard"
+                            android:text="Medium"
                             android:textAlignment="textEnd"
                             android:textColor="@color/black" />
 
@@ -393,7 +393,7 @@
                         android:id="@+id/tags2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="#Rice #Fish #Asian"
+                        android:text="#mozzarella #Italian"
                         android:textAlignment="textStart"
                         android:textColor="@color/black" />
 
@@ -403,8 +403,9 @@
                         android:layout_width="300dp"
                         android:layout_height="200dp"
                         android:layout_gravity="center"
+                        android:scaleType="centerCrop"
                         android:layout_margin="8dp"
-                        app:srcCompat="@drawable/sushi1">
+                        app:srcCompat="@drawable/pizza2">
 
                     </androidx.appcompat.widget.AppCompatImageView>
 
@@ -427,7 +428,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="10"
-                            android:text="190k"
+                            android:text="123k"
                             android:textAlignment="center"
                             android:textColor="@color/black"
                             android:textSize="15dp" />
@@ -445,7 +446,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="10"
-                            android:text="20k"
+                            android:text="1k"
                             android:textAlignment="center"
                             android:textColor="@color/black"
                             android:textSize="15dp" />
@@ -522,7 +523,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.7"
-                            android:text="SUSHI"
+                            android:text="Shrimp pasta"
                             android:textColor="@color/teal_700"
                             android:textSize="20dp"
                             android:textStyle="bold" />
@@ -540,7 +541,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="0.2"
-                            android:text="4.6 (249)"
+                            android:text="4.4 (1273)"
                             android:textAlignment="viewEnd"
                             android:textColor="@color/black"
                             android:textSize="15dp" />
@@ -558,7 +559,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.7"
-                            android:text="\@noahflower"
+                            android:text="\@emily1miller"
                             android:textColor="@color/black"
                             android:textSize="15dp" />
 
@@ -575,7 +576,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="0.2"
-                            android:text="30 min"
+                            android:text="18 min"
                             android:textAlignment="textEnd"
                             android:textColor="@color/black" />
 
@@ -592,7 +593,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="0.7"
-                            android:text="Friday, May 12 2022, 14:30"
+                            android:text="Friday, May 20 2022, 10:27"
                             android:textColor="@color/black" />
 
                         <ImageView
@@ -606,7 +607,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="0.2"
-                            android:text="Hard"
+                            android:text="Easy"
                             android:textAlignment="textEnd"
                             android:textColor="@color/black" />
 
@@ -617,7 +618,7 @@
                         android:id="@+id/tags3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="#Rice #Fish #Asian"
+                        android:text="#Shrimp #Fish #Italian"
                         android:textAlignment="textStart"
                         android:textColor="@color/black" />
 
@@ -627,8 +628,9 @@
                         android:layout_width="300dp"
                         android:layout_height="200dp"
                         android:layout_gravity="center"
+                        android:scaleType="centerCrop"
                         android:layout_margin="8dp"
-                        app:srcCompat="@drawable/sushi1">
+                        app:srcCompat="@drawable/pasta">
 
                     </androidx.appcompat.widget.AppCompatImageView>
 
@@ -651,7 +653,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="10"
-                            android:text="190k"
+                            android:text="77k"
                             android:textAlignment="center"
                             android:textColor="@color/black"
                             android:textSize="15dp" />
@@ -669,7 +671,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="10"
-                            android:text="20k"
+                            android:text="2k"
                             android:textAlignment="center"
                             android:textColor="@color/black"
                             android:textSize="15dp" />
@@ -746,7 +748,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.7"
-                            android:text="SUSHI"
+                            android:text="Oven-baked salmon wit..."
                             android:textColor="@color/teal_700"
                             android:textSize="20dp"
                             android:textStyle="bold" />
@@ -764,7 +766,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="0.2"
-                            android:text="4.6 (249)"
+                            android:text="4.7 (4052)"
                             android:textAlignment="viewEnd"
                             android:textColor="@color/black"
                             android:textSize="15dp" />
@@ -799,7 +801,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="0.2"
-                            android:text="30 min"
+                            android:text="38 min"
                             android:textAlignment="textEnd"
                             android:textColor="@color/black" />
 
@@ -816,7 +818,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="0.7"
-                            android:text="Friday, May 12 2022, 14:30"
+                            android:text="Friday, May 20 2022, 8:54"
                             android:textColor="@color/black" />
 
                         <ImageView
@@ -830,7 +832,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="0.2"
-                            android:text="Hard"
+                            android:text="Easy"
                             android:textAlignment="textEnd"
                             android:textColor="@color/black" />
 
@@ -841,7 +843,7 @@
                         android:id="@+id/tags4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="#Rice #Fish #Asian"
+                        android:text="#Fish #Asian"
                         android:textAlignment="textStart"
                         android:textColor="@color/black" />
 
@@ -851,8 +853,9 @@
                         android:layout_width="300dp"
                         android:layout_height="200dp"
                         android:layout_gravity="center"
+                        android:scaleType="centerCrop"
                         android:layout_margin="8dp"
-                        app:srcCompat="@drawable/sushi1">
+                        app:srcCompat="@drawable/salmon">
 
                     </androidx.appcompat.widget.AppCompatImageView>
 
@@ -893,7 +896,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="10"
-                            android:text="20k"
+                            android:text="3k"
                             android:textAlignment="center"
                             android:textColor="@color/black"
                             android:textSize="15dp" />
