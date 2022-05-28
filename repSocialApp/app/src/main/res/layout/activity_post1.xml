@@ -59,30 +59,26 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <ImageButton
-        android:id="@+id/shareB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="360dp"
-        android:layout_marginTop="16dp"
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="16dp"
-        android:background="?attr/selectableItemBackground"
-        android:src="@drawable/ic_baseline_calendar_today_24"
-        app:layout_constraintCircleRadius="24dp"
+        android:src="@drawable/add_calendar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
 
     <ScrollView
         android:id="@+id/scroll_feed"
-        android:layout_width="349dp"
-        android:layout_height="610dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="70dp">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="65dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/PostCard1"
@@ -110,6 +106,7 @@
                     android:id="@+id/image_view3"
                     android:layout_width="350dp"
                     android:layout_height="240dp"
+                    android:paddingBottom="10dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/sushi1"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -119,40 +116,47 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:weightSum="100"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
                     <TextView
                         android:id="@+id/titulo"
-                        android:textColor="@color/teal_700"
-                        android:textStyle="bold"
                         android:layout_width="0dp"
-                        android:layout_weight="50"
-                        android:textSize="20dp"
                         android:layout_height="26dp"
-                        android:text="SUSHI" />
+                        android:layout_weight="50"
+                        android:text="SUSHI"
+                        android:textColor="@color/teal_700"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"></TextView>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:src="@drawable/ic_baseline_bookmark_24">
+
+                    </ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
 
                     <TextView
                         android:id="@+id/textView78"
                         android:layout_width="0dp"
                         android:layout_height="26dp"
                         android:layout_weight="50"
-                        android:textAlignment="textEnd"
-                        android:text="\@noahflower" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:weightSum="100"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView16"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="50"
-                        android:text="" />
+                        android:text="\@noahflower"
+                        android:textColor="@color/black" />
 
                     <TextView
                         android:id="@+id/textView6"
@@ -160,107 +164,189 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="50"
                         android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                        android:text="30 min (Preparation)"
                         android:textAlignment="textEnd"
-                        android:text="30 min (Preparation)" />
+                        android:textColor="@color/black" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:weightSum="100"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:weightSum="100">
 
                     <TextView
                         android:id="@+id/textView17"
                         android:layout_width="0dp"
-                        android:drawableLeft="@drawable/ic_baseline_signal_cellular_alt_24"
                         android:layout_height="wrap_content"
                         android:layout_weight="50"
-                        android:text="Hard" />
+                        android:drawableLeft="@drawable/ic_baseline_signal_cellular_alt_24"
+                        android:text="Hard"
+                        android:textColor="@color/black" />
 
                     <TextView
                         android:id="@+id/textView18"
                         android:layout_width="0dp"
-                        android:drawableLeft="@drawable/ic_baseline_access_time_filled_24"
                         android:layout_height="wrap_content"
                         android:layout_weight="50"
+                        android:drawableLeft="@drawable/ic_baseline_access_time_filled_24"
+                        android:text="30 min (total)"
                         android:textAlignment="textEnd"
-                        android:text="30 min (total)" />
+                        android:textColor="@color/black" />
                 </LinearLayout>
 
                 <View
                     android:layout_width="fill_parent"
                     android:layout_height="1dp"
-                    android:background="@color/gray"
+                    android:background="@color/black"
                     android:focusable="false" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@color/black"
+                        android:focusable="false" />
 
                     <TextView
                         android:id="@+id/textView19"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="TextView" />
+                        android:layout_weight="25"
+                        android:text="CALORIES"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@color/black"
+                        android:focusable="false" />
 
                     <TextView
                         android:id="@+id/textView20"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="TextView" />
+                        android:layout_weight="25"
+                        android:text="PROTEIN"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@color/black"
+                        android:focusable="false" />
 
                     <TextView
                         android:id="@+id/textView21"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="TextView" />
+                        android:layout_weight="25"
+                        android:text="FAT"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@color/black"
+                        android:focusable="false" />
 
                     <TextView
                         android:id="@+id/textView22"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="TextView" />
+                        android:layout_weight="25"
+                        android:text="CARBS"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@color/black"
+                        android:focusable="false" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@color/black"
+                        android:focusable="false" />
 
                     <TextView
                         android:id="@+id/textView23"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="TextView" />
+                        android:layout_weight="25"
+                        android:text="415 kcal"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@color/black"
+                        android:focusable="false" />
 
                     <TextView
                         android:id="@+id/textView24"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="TextView" />
+                        android:layout_weight="25"
+                        android:text="12.5g"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@color/black"
+                        android:focusable="false" />
 
                     <TextView
                         android:id="@+id/textView25"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="TextView" />
+                        android:layout_weight="25"
+                        android:text="9.2g"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@color/black"
+                        android:focusable="false" />
 
                     <TextView
                         android:id="@+id/textView26"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="TextView" />
+                        android:layout_weight="25"
+                        android:text="11.7g"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@color/black"
+                        android:focusable="false" />
 
 
                 </LinearLayout>
@@ -268,142 +354,184 @@
                 <View
                     android:layout_width="fill_parent"
                     android:layout_height="1dp"
-                    android:background="@color/gray"
+                    android:background="@color/black"
                     android:focusable="false" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:weightSum="100">
 
                     <TextView
                         android:id="@+id/textView27"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Ingredients"
-                        android:textColor="@color/black"/>
+                        android:layout_weight="60"
+                        android:text="INGREDIENTS"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/textView28"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="3 portions" />
+                        android:layout_weight="35"
+                        android:drawableLeft="@drawable/ic_baseline_people_24"
+                        android:text="3 portions"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black" />
                 </LinearLayout>
 
-                <EditText
+                <TextView
                     android:id="@+id/editTextTextMultiLine3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:gravity="start|top"
                     android:inputType="textMultiLine"
-                    android:backgroundTint="@color/gray"
-                    android:text="3 cebola \n400g massa \nas"/>
+                    android:lineSpacingExtra="5dp"
+                    android:text="- Seaweed (10 sheets)
+                     \n- Sushi Rice (750g)
+                     \n- Smoked Salmon (100g)
+                     \n- Rice vinegar (25ml)
+                     \n- Cucumber (1/4)
+                     \n- Mango (1)"
+                    android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/textView29"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="How to cook:"
-                    android:textColor="@color/black" />
+                    android:paddingTop="10dp"
+                    android:text="HOW TO COOK"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
 
-                <EditText
+                <TextView
                     android:id="@+id/editTextTextMultiLine4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
+                    android:paddingTop="6dp"
                     android:gravity="start|top"
                     android:inputType="textMultiLine"
-                    android:backgroundTint="@color/gray"
-                    android:text="cenas \nda \nvida"/>
+                    android:lineSpacingExtra="5dp"
+                    android:paddingBottom="10dp"
+                    android:text="1. Boil rice
+                    \n2. Serve rice on seaweed sheet
+                    \n3. Impregnate rice with rice vinegar
+                    \n4. Add cucumber, mango and salmon slices
+                    \n5. Roll the seaweed
+                    \n6. Cut the roll in 5 parts
+                    \n7. Serve creatively :)"
+                    android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/textView30"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:paddingBottom="5dp"
+                    android:text="COMMENTS (2)"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
 
-                <LinearLayout
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/PostCard2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView31"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="TextView" />
+                    android:layout_margin="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:clickable="true"
+                    android:elevation="12dp"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="10dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:layout_margin="8dp"
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView32"
+                            android:id="@+id/textView377"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="TextView" />
+                            android:text="\@dorothyprincess"
+                            android:textColor="@color/black" />
 
                         <TextView
-                            android:id="@+id/textView33"
+                            android:id="@+id/textView338"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="TextView" />
+                            android:text="Friday, 30 May 2022, 11:11"
+                            android:textColor="@color/black"
+                            android:textSize="11dp" />
+
+                        <TextView
+                            android:id="@+id/editTextTextMultiLine58"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:gravity="start|top"
+                            android:inputType="textMultiLine"
+                            android:paddingBottom="10dp"
+                            android:text="OMG! So tasty and easy to make at the same time!"
+                            android:textColor="@color/black" />
+
                     </LinearLayout>
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                <EditText
-                    android:id="@+id/editTextTextMultiLine5"
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/PostCard3"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:gravity="start|top"
-                    android:inputType="textMultiLine" />
-
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:clickable="true"
+                    android:elevation="12dp"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="10dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView34"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="TextView" />
-
-                    <LinearLayout
+                        android:id="@+id/textView32"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
+                        android:layout_height="wrap_content"
+                        android:text="\@dorothyprincess"
+                        android:textColor="@color/black" />
 
-                        <TextView
-                            android:id="@+id/textView36"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="TextView" />
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Friday, 30 May 2022, 11:11"
+                        android:textColor="@color/black"
+                        android:textSize="11dp" />
 
-                        <TextView
-                            android:id="@+id/textView35"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="TextView" />
-                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/editTextTextMultiLine5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="start|top"
+                        android:inputType="textMultiLine"
+                        android:paddingBottom="10dp"
+                        android:text="I AM YOUR FAN!"
+                        android:textColor="@color/black" />
+
                 </LinearLayout>
 
-                <EditText
-                    android:id="@+id/editTextTextMultiLine6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:gravity="start|top"
-                    android:inputType="textMultiLine" />
+                </androidx.cardview.widget.CardView>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -416,15 +544,15 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:ems="10"
-                        android:inputType="textPersonName"
-                        android:text="Name" />
+                        android:hint="Enter comment"
+                        android:inputType="textPersonName" />
 
                     <Button
                         android:id="@+id/button4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Button" />
+                        android:text="Submit" />
                 </LinearLayout>
 
 

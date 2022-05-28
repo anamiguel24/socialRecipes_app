@@ -758,6 +758,7 @@
                             android:src="@drawable/ic_baseline_star_24">
 
                         </ImageView>
+
                         <TextView
                             android:id="@+id/rating4"
                             android:layout_width="0dp"
@@ -792,6 +793,7 @@
                             android:src="@drawable/ic_baseline_access_time_filled_24">
 
                         </ImageView>
+
                         <TextView
                             android:id="@+id/preparation4"
                             android:layout_width="0dp"
@@ -821,8 +823,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="0.1"
-                            android:src="@drawable/ic_baseline_signal_cellular_alt_24">
-                        </ImageView>
+                            android:src="@drawable/ic_baseline_signal_cellular_alt_24"></ImageView>
 
                         <TextView
                             android:id="@+id/difficulty4"
