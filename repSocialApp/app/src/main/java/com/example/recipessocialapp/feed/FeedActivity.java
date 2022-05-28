@@ -11,9 +11,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
 
 import com.example.recipessocialapp.R;
+import com.example.recipessocialapp.search.SearchRecipesActivity;
 import com.example.recipessocialapp.shoppinglist.ShoppingListActivity;
 import com.example.recipessocialapp.databinding.ActivityFeedBinding;
-import com.example.recipessocialapp.databinding.ActivityMyprofileBinding;
 import com.example.recipessocialapp.profilePages.MyProfileActivity;
 import com.example.recipessocialapp.profilePages.UserProfileActivity;
 import com.example.recipessocialapp.weeklyplan.WeeklyPlanActivity;
@@ -60,6 +60,14 @@ public class FeedActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(FeedActivity.this,  UserProfileActivity.class));
+            }
+        });
+
+        View search = findViewById(R.id.search);
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(FeedActivity.this,  SearchRecipesActivity.class));
             }
         });
 

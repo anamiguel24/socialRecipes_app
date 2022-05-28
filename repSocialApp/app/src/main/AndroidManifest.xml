@@ -43,9 +43,14 @@
         <activity
             android:name=".feed.PostActvity"
             android:label="Post" />
+
         <activity
             android:name=".shoppinglist.ShoppingListActivity"
             android:label="Shopping List" />
+
+        <activity
+            android:name=".search.SearchRecipesActivity"
+            android:label="Search" />
     </application>
 
 </manifest>
