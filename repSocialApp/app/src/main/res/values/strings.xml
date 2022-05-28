@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Yummy</string>
+
+    <string-array name="difficulty_array">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+    </string-array>
+    <string-array name="worktime_array">
+        <item>min</item>
+        <item>h</item>
+    </string-array>
+    <string-array name="totaltime_array">
+        <item>min</item>
+        <item>h</item>
+        <item>days</item>
+    </string-array>
 </resources>
