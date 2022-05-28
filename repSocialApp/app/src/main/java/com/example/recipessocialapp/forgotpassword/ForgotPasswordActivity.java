@@ -16,7 +16,6 @@ import com.example.recipessocialapp.login.LoginActivity;
 
 public class ForgotPasswordActivity extends AppCompatActivity {
     private ActivityForgotpasswordBinding binding;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

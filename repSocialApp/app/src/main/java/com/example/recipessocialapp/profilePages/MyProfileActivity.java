@@ -3,6 +3,8 @@ package com.example.recipessocialapp.profilePages;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +13,7 @@ import com.example.recipessocialapp.R;
 import com.example.recipessocialapp.databinding.ActivityMyprofileBinding;
 import com.example.recipessocialapp.databinding.ActivityUserprofile1Binding;
 import com.example.recipessocialapp.feed.FeedActivity;
+import com.example.recipessocialapp.shoppinglist.ShoppingListActivity;
 import com.example.recipessocialapp.weeklyplan.WeeklyPlanActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
@@ -25,7 +28,13 @@ public class MyProfileActivity extends AppCompatActivity {
         binding = ActivityMyprofileBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-
+        ImageButton backB = findViewById(R.id.backB);
+        backB.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         // bottom bar
         BottomNavigationView bottom_bar = findViewById(R.id.bottom_bar);
@@ -40,6 +49,8 @@ public class MyProfileActivity extends AppCompatActivity {
                         overridePendingTransition(R.anim.slide_in_up,R.anim.slide_out_up);
                         return true;
                     case R.id.navigation_shoppinglist:
+                        startActivity(new Intent(getApplicationContext(), ShoppingListActivity.class));
+                        overridePendingTransition(R.anim.slide_in_up,R.anim.slide_out_up);
                         return true;
                     case R.id.navigation_addrecipe:
                         return true;

@@ -3,6 +3,9 @@ package com.example.recipessocialapp.feed;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +14,8 @@ import com.example.recipessocialapp.R;
 import com.example.recipessocialapp.databinding.ActivityPost1Binding;
 import com.example.recipessocialapp.databinding.ActivityUserprofile1Binding;
 import com.example.recipessocialapp.profilePages.MyProfileActivity;
+import com.example.recipessocialapp.profilePages.UserProfileActivity;
+import com.example.recipessocialapp.shoppinglist.ShoppingListActivity;
 import com.example.recipessocialapp.weeklyplan.WeeklyPlanActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
@@ -25,6 +30,22 @@ public class PostActvity extends AppCompatActivity {
         binding = ActivityPost1Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        ImageButton backB = findViewById(R.id.backB);
+        backB.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
+        TextView user1 = findViewById(R.id.user);
+        user1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PostActvity.this,  UserProfileActivity.class));
+            }
+        });
+
         // bottom bar
         BottomNavigationView bottom_bar = findViewById(R.id.bottom_bar);
         bottom_bar.getMenu().setGroupCheckable(0, false, true);
@@ -38,6 +59,8 @@ public class PostActvity extends AppCompatActivity {
                         overridePendingTransition(R.anim.slide_in_up,R.anim.slide_out_up);
                         return true;
                     case R.id.navigation_shoppinglist:
+                        startActivity(new Intent(getApplicationContext(), ShoppingListActivity.class));
+                        overridePendingTransition(R.anim.slide_in_up,R.anim.slide_out_up);
                         return true;
                     case R.id.navigation_addrecipe:
                         return true;

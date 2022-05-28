@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -12,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
 
 import com.example.recipessocialapp.R;
-import com.example.recipessocialapp.ShoppingListActivity;
+import com.example.recipessocialapp.shoppinglist.ShoppingListActivity;
 import com.example.recipessocialapp.databinding.ActivityFeedBinding;
 import com.example.recipessocialapp.databinding.ActivityMyprofileBinding;
 import com.example.recipessocialapp.profilePages.MyProfileActivity;

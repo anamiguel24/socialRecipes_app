@@ -43,6 +43,9 @@
         <activity
             android:name=".feed.PostActvity"
             android:label="Post" />
+        <activity
+            android:name=".shoppinglist.ShoppingListActivity"
+            android:label="Shopping List" />
     </application>
 
 </manifest>

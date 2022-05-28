@@ -151,7 +151,7 @@
                     android:weightSum="100">
 
                     <TextView
-                        android:id="@+id/textView78"
+                        android:id="@+id/user"
                         android:layout_width="0dp"
                         android:layout_height="26dp"
                         android:layout_weight="50"
