@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
 
 import com.example.recipessocialapp.R;
+import com.example.recipessocialapp.ShoppingListActivity;
 import com.example.recipessocialapp.databinding.ActivityFeedBinding;
 import com.example.recipessocialapp.databinding.ActivityMyprofileBinding;
 import com.example.recipessocialapp.profilePages.MyProfileActivity;
@@ -75,6 +76,8 @@ public class FeedActivity extends AppCompatActivity {
                     case R.id.navigation_home:
                         return true;
                     case R.id.navigation_shoppinglist:
+                        startActivity(new Intent(getApplicationContext(), ShoppingListActivity.class));
+                        overridePendingTransition(R.anim.slide_in_up,R.anim.slide_out_up);
                         return true;
                     case R.id.navigation_addrecipe:
                         return true;
