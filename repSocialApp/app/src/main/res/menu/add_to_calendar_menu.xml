@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+    <item
+        android:id="@+id/title"
+        android:enabled="false"
+        android:title="Choose a day" />
     <item
         android:id="@+id/navigation_monday"
         android:title="Monday" />
@@ -25,7 +28,4 @@
     <item
         android:id="@+id/navigation_sunday"
         android:title="Sunday" />
-
-
-
 </menu>

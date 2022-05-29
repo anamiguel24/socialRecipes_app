@@ -4,7 +4,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.PopupMenu;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -39,9 +43,39 @@ public class WeeklyPlanActivity extends AppCompatActivity {
             }
         });
 
-        // bottom bar
         binding = ActivityWeeklyplanBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        // WEEK BUTTON
+        Button week = (Button) findViewById(R.id.week);
+        week.setText("27 June - 03 July");
+        week.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Creating the instance of PopupMenu
+                PopupMenu popup = new PopupMenu(WeeklyPlanActivity.this, week);
+                //Inflating the Popup using xml file
+                popup.getMenuInflater()
+                        .inflate(R.menu.choose_week_menu, popup.getMenu());
+
+                //registering popup with OnMenuItemClickListener
+                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    public boolean onMenuItemClick(MenuItem item) {
+                        Toast.makeText(
+                                WeeklyPlanActivity.this,
+                                item.getTitle(),
+                                Toast.LENGTH_SHORT
+                        ).show();
+                        week.setText(item.getTitle());
+                        return true;
+                    }
+                });
+
+                popup.show(); //showing popup menu
+            }
+        }); //closing the setOnClickListener metho
+
+        // bottom bar
 
         BottomNavigationView bottom_bar = findViewById(R.id.bottom_bar);
         bottom_bar.setSelectedItemId(R.id.navigation_calendar);

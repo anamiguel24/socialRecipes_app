@@ -28,6 +28,8 @@ import com.google.android.material.navigation.NavigationBarView;
 
 public class FeedActivity extends AppCompatActivity {
     private ActivityFeedBinding binding;
+    private CharSequence chosen_week="27 June - 03 July";
+    private CharSequence chosen_day = "Monday";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,9 +113,26 @@ public class FeedActivity extends AppCompatActivity {
 
         // ADD TO CALENDAR DROPDOWN MENU
         ImageView calendarB = (ImageView) findViewById(R.id.addcalendar);
+
         calendarB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                PopupMenu popup3 = new PopupMenu(FeedActivity.this, calendarB);
+                //Inflating the Popup using xml file
+                popup3.getMenuInflater()
+                        .inflate(R.menu.portions_menu, popup3.getMenu());
+
+                //registering popup with OnMenuItemClickListener
+                popup3.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    public boolean onMenuItemClick(MenuItem item) {
+                        Toast.makeText(
+                                FeedActivity.this,
+                                "Recipe added on " + chosen_day +", "+ chosen_week,
+                                Toast.LENGTH_SHORT
+                        ).show();
+                        return true;
+                    }
+                });
                 //Creating the instance of PopupMenu
                 PopupMenu popup = new PopupMenu(FeedActivity.this, calendarB);
                 //Inflating the Popup using xml file
@@ -123,25 +142,52 @@ public class FeedActivity extends AppCompatActivity {
                 //registering popup with OnMenuItemClickListener
                 popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     public boolean onMenuItemClick(MenuItem item) {
-                        Toast.makeText(
-                                FeedActivity.this,
-                                "Recipe added on " + item.getTitle(),
-                                Toast.LENGTH_SHORT
-                        ).show();
+                        chosen_day=item.getTitle();
+                        popup3.show();
                         return true;
                     }
                 });
 
-                popup.show(); //showing popup menu
+                PopupMenu popup2 = new PopupMenu(FeedActivity.this, calendarB);
+                //Inflating the Popup using xml file
+                popup2.getMenuInflater()
+                        .inflate(R.menu.choose_week_menu, popup2.getMenu());
+
+                //registering popup with OnMenuItemClickListener
+                popup2.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    public boolean onMenuItemClick(MenuItem item) {
+                        chosen_week=item.getTitle();
+                        popup.show();
+                        return true;
+                    }
+                });
+
+                popup2.show();
             }
-        }); //closing the setOnClickListener metho
+        });
 
         ImageView calendarB2 = (ImageView) findViewById(R.id.addcalendar2);
         calendarB2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                PopupMenu popup3 = new PopupMenu(FeedActivity.this, calendarB2);
+                //Inflating the Popup using xml file
+                popup3.getMenuInflater()
+                        .inflate(R.menu.portions_menu, popup3.getMenu());
+
+                //registering popup with OnMenuItemClickListener
+                popup3.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    public boolean onMenuItemClick(MenuItem item) {
+                        Toast.makeText(
+                                FeedActivity.this,
+                                "Recipe added on " + chosen_day +", "+ chosen_week,
+                                Toast.LENGTH_SHORT
+                        ).show();
+                        return true;
+                    }
+                });
                 //Creating the instance of PopupMenu
-                PopupMenu popup = new PopupMenu(FeedActivity.this, calendarB);
+                PopupMenu popup = new PopupMenu(FeedActivity.this, calendarB2);
                 //Inflating the Popup using xml file
                 popup.getMenuInflater()
                         .inflate(R.menu.add_to_calendar_menu, popup.getMenu());
@@ -149,25 +195,52 @@ public class FeedActivity extends AppCompatActivity {
                 //registering popup with OnMenuItemClickListener
                 popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     public boolean onMenuItemClick(MenuItem item) {
-                        Toast.makeText(
-                                FeedActivity.this,
-                                "Recipe added on " + item.getTitle(),
-                                Toast.LENGTH_SHORT
-                        ).show();
+                        chosen_day=item.getTitle();
+                        popup3.show();
                         return true;
                     }
                 });
 
-                popup.show(); //showing popup menu
+                PopupMenu popup2 = new PopupMenu(FeedActivity.this, calendarB2);
+                //Inflating the Popup using xml file
+                popup2.getMenuInflater()
+                        .inflate(R.menu.choose_week_menu, popup2.getMenu());
+
+                //registering popup with OnMenuItemClickListener
+                popup2.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    public boolean onMenuItemClick(MenuItem item) {
+                        chosen_week=item.getTitle();
+                        popup.show();
+                        return true;
+                    }
+                });
+
+                popup2.show();
             }
-        }); //closing the setOnClickListener metho
+        });
 
         ImageView calendarB3 = (ImageView) findViewById(R.id.addcalendar3);
         calendarB3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                PopupMenu popup3 = new PopupMenu(FeedActivity.this, calendarB3);
+                //Inflating the Popup using xml file
+                popup3.getMenuInflater()
+                        .inflate(R.menu.portions_menu, popup3.getMenu());
+
+                //registering popup with OnMenuItemClickListener
+                popup3.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    public boolean onMenuItemClick(MenuItem item) {
+                        Toast.makeText(
+                                FeedActivity.this,
+                                "Recipe added on " + chosen_day +", "+ chosen_week,
+                                Toast.LENGTH_SHORT
+                        ).show();
+                        return true;
+                    }
+                });
                 //Creating the instance of PopupMenu
-                PopupMenu popup = new PopupMenu(FeedActivity.this, calendarB);
+                PopupMenu popup = new PopupMenu(FeedActivity.this, calendarB3);
                 //Inflating the Popup using xml file
                 popup.getMenuInflater()
                         .inflate(R.menu.add_to_calendar_menu, popup.getMenu());
@@ -175,25 +248,52 @@ public class FeedActivity extends AppCompatActivity {
                 //registering popup with OnMenuItemClickListener
                 popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     public boolean onMenuItemClick(MenuItem item) {
-                        Toast.makeText(
-                                FeedActivity.this,
-                                "Recipe added on " + item.getTitle(),
-                                Toast.LENGTH_SHORT
-                        ).show();
+                        chosen_day=item.getTitle();
+                        popup3.show();
                         return true;
                     }
                 });
 
-                popup.show(); //showing popup menu
+                PopupMenu popup2 = new PopupMenu(FeedActivity.this, calendarB3);
+                //Inflating the Popup using xml file
+                popup2.getMenuInflater()
+                        .inflate(R.menu.choose_week_menu, popup2.getMenu());
+
+                //registering popup with OnMenuItemClickListener
+                popup2.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    public boolean onMenuItemClick(MenuItem item) {
+                        chosen_week=item.getTitle();
+                        popup.show();
+                        return true;
+                    }
+                });
+
+                popup2.show();
             }
-        }); //closing the setOnClickListener metho
+        });
 
         ImageView calendarB4 = (ImageView) findViewById(R.id.addcalendar4);
         calendarB4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                PopupMenu popup3 = new PopupMenu(FeedActivity.this, calendarB4);
+                //Inflating the Popup using xml file
+                popup3.getMenuInflater()
+                        .inflate(R.menu.portions_menu, popup3.getMenu());
+
+                //registering popup with OnMenuItemClickListener
+                popup3.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    public boolean onMenuItemClick(MenuItem item) {
+                        Toast.makeText(
+                                FeedActivity.this,
+                                "Recipe added on " + chosen_day +", "+ chosen_week,
+                                Toast.LENGTH_SHORT
+                        ).show();
+                        return true;
+                    }
+                });
                 //Creating the instance of PopupMenu
-                PopupMenu popup = new PopupMenu(FeedActivity.this, calendarB);
+                PopupMenu popup = new PopupMenu(FeedActivity.this, calendarB4);
                 //Inflating the Popup using xml file
                 popup.getMenuInflater()
                         .inflate(R.menu.add_to_calendar_menu, popup.getMenu());
@@ -201,18 +301,29 @@ public class FeedActivity extends AppCompatActivity {
                 //registering popup with OnMenuItemClickListener
                 popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     public boolean onMenuItemClick(MenuItem item) {
-                        Toast.makeText(
-                                FeedActivity.this,
-                                "Recipe added on " + item.getTitle(),
-                                Toast.LENGTH_SHORT
-                        ).show();
+                        chosen_day=item.getTitle();
+                        popup3.show();
                         return true;
                     }
                 });
 
-                popup.show(); //showing popup menu
+                PopupMenu popup2 = new PopupMenu(FeedActivity.this, calendarB4);
+                //Inflating the Popup using xml file
+                popup2.getMenuInflater()
+                        .inflate(R.menu.choose_week_menu, popup2.getMenu());
+
+                //registering popup with OnMenuItemClickListener
+                popup2.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    public boolean onMenuItemClick(MenuItem item) {
+                        chosen_week=item.getTitle();
+                        popup.show();
+                        return true;
+                    }
+                });
+
+                popup2.show();
             }
-        }); //closing the setOnClickListener metho
+        });
 
 
         // bottom bar
