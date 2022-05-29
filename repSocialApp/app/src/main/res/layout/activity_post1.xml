@@ -126,7 +126,7 @@
                         android:layout_width="0dp"
                         android:layout_height="26dp"
                         android:layout_weight="50"
-                        android:text="SUSHI"
+                        android:text="Vegetarian Sushi"
                         android:textColor="@color/teal_700"
                         android:textSize="20dp"
                         android:textStyle="bold" />
