@@ -39,7 +39,7 @@
     android:layout_marginTop="16dp"
     android:gravity="center_horizontal"
     android:letterSpacing="0.025"
-    android:text="/@jennifer21"
+    android:text="\@jennifer21"
     android:textColor="@color/white"
     android:textSize="28sp"
     android:textStyle="bold"

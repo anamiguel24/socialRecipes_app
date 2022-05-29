@@ -34,7 +34,13 @@
 
         <activity
             android:name=".profilePages.UserProfileActivity"
-            android:label="user_name" />
+            android:label="noahflower" />
+        <activity
+            android:name=".profilePages.UserProfileActivity2"
+            android:label="jennifer21" />
+        <activity
+            android:name=".profilePages.UserProfileActivity3"
+            android:label="emily1miller" />
 
         <activity
             android:name=".weeklyplan.WeeklyPlanActivity"

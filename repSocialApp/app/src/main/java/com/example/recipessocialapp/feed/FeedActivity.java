@@ -15,6 +15,8 @@ import androidx.appcompat.widget.AppCompatImageView;
 
 import com.example.recipessocialapp.R;
 import com.example.recipessocialapp.createpost.CreatepostActivity;
+import com.example.recipessocialapp.profilePages.UserProfileActivity2;
+import com.example.recipessocialapp.profilePages.UserProfileActivity3;
 import com.example.recipessocialapp.search.SearchRecipesActivity;
 import com.example.recipessocialapp.shoppinglist.ShoppingListActivity;
 import com.example.recipessocialapp.databinding.ActivityFeedBinding;
@@ -55,7 +57,7 @@ public class FeedActivity extends AppCompatActivity {
         user2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(FeedActivity.this,  UserProfileActivity.class));
+                startActivity(new Intent(FeedActivity.this,  UserProfileActivity2.class));
             }
         });
 
@@ -71,7 +73,7 @@ public class FeedActivity extends AppCompatActivity {
         user3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(FeedActivity.this,  UserProfileActivity.class));
+                startActivity(new Intent(FeedActivity.this,  UserProfileActivity3.class));
             }
         });
 
@@ -84,7 +86,7 @@ public class FeedActivity extends AppCompatActivity {
         });
 
         TextView user4 = findViewById(R.id.user4);
-        user3.setOnClickListener(new View.OnClickListener() {
+        user4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(FeedActivity.this,  UserProfileActivity.class));
