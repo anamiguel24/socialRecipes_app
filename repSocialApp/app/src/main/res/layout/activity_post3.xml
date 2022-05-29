@@ -60,6 +60,7 @@
 
 
     <ImageView
+        android:id="@+id/addcalendar"
         android:layout_width="50dp"
         android:layout_height="30dp"
         android:layout_marginStart="350dp"
@@ -480,7 +481,7 @@
                             android:gravity="start|top"
                             android:inputType="textMultiLine"
                             android:paddingBottom="10dp"
-                            android:text="OMG! So tasty and easy to make at the same time!"
+                            android:text="I think I'll just make this recipe everyday!"
                             android:textColor="@color/black" />
 
                     </LinearLayout>
@@ -527,7 +528,7 @@
                             android:gravity="start|top"
                             android:inputType="textMultiLine"
                             android:paddingBottom="10dp"
-                            android:text="I AM YOUR FAN!"
+                            android:text="Das melhores massas que já comi!"
                             android:textColor="@color/black" />
 
                     </LinearLayout>

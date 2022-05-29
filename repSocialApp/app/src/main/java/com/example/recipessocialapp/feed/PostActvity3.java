@@ -15,8 +15,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.recipessocialapp.R;
 import com.example.recipessocialapp.createpost.CreatepostActivity;
-import com.example.recipessocialapp.databinding.ActivityPost1Binding;
-import com.example.recipessocialapp.databinding.ActivityUserprofile1Binding;
+import com.example.recipessocialapp.databinding.ActivityPost2Binding;
+import com.example.recipessocialapp.databinding.ActivityPost3Binding;
 import com.example.recipessocialapp.profilePages.MyProfileActivity;
 import com.example.recipessocialapp.profilePages.UserProfileActivity;
 import com.example.recipessocialapp.shoppinglist.ShoppingListActivity;
@@ -24,14 +24,14 @@ import com.example.recipessocialapp.weeklyplan.WeeklyPlanActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
-public class PostActvity extends AppCompatActivity {
-    private ActivityPost1Binding binding;
+public class PostActvity3 extends AppCompatActivity {
+    private ActivityPost3Binding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityPost1Binding.inflate(getLayoutInflater());
+        binding = ActivityPost3Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         ImageButton backB = findViewById(R.id.backB);
@@ -46,7 +46,7 @@ public class PostActvity extends AppCompatActivity {
         user1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(PostActvity.this,  UserProfileActivity.class));
+                startActivity(new Intent(PostActvity3.this,  UserProfileActivity.class));
             }
         });
 
@@ -57,7 +57,7 @@ public class PostActvity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Creating the instance of PopupMenu
-                PopupMenu popup = new PopupMenu(PostActvity.this, calendarB);
+                PopupMenu popup = new PopupMenu(PostActvity3.this, calendarB);
                 //Inflating the Popup using xml file
                 popup.getMenuInflater()
                         .inflate(R.menu.add_to_calendar_menu, popup.getMenu());
@@ -66,7 +66,7 @@ public class PostActvity extends AppCompatActivity {
                 popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     public boolean onMenuItemClick(MenuItem item) {
                         Toast.makeText(
-                                PostActvity.this,
+                                PostActvity3.this,
                                 "Recipe added on " + item.getTitle(),
                                 Toast.LENGTH_SHORT
                         ).show();

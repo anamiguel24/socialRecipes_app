@@ -43,6 +43,15 @@
         <activity
             android:name=".feed.PostActvity"
             android:label="Post" />
+        <activity
+            android:name=".feed.PostActvity2"
+            android:label="Post" />
+        <activity
+            android:name=".feed.PostActvity3"
+            android:label="Post" />
+        <activity
+            android:name=".feed.PostActvity4"
+            android:label="Post" />
 
         <activity
             android:name=".shoppinglist.ShoppingListActivity"

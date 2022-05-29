@@ -180,6 +180,8 @@
                         android:layout_height="200dp"
                         android:layout_gravity="center"
                         android:layout_margin="8dp"
+                        android:clickable="true"
+                        android:focusable="true"
                         app:srcCompat="@drawable/sushi1">
 
                     </androidx.appcompat.widget.AppCompatImageView>

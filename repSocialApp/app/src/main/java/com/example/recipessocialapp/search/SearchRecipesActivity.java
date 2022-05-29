@@ -18,6 +18,9 @@ import com.example.recipessocialapp.R;
 import com.example.recipessocialapp.createpost.CreatepostActivity;
 import com.example.recipessocialapp.feed.FeedActivity;
 import com.example.recipessocialapp.feed.PostActvity;
+import com.example.recipessocialapp.feed.PostActvity2;
+import com.example.recipessocialapp.feed.PostActvity3;
+import com.example.recipessocialapp.feed.PostActvity4;
 import com.example.recipessocialapp.profilePages.MyProfileActivity;
 import com.example.recipessocialapp.profilePages.UserProfileActivity;
 import com.example.recipessocialapp.shoppinglist.ShoppingListActivity;
@@ -92,15 +95,11 @@ public class SearchRecipesActivity extends AppCompatActivity implements Adapter.
 
     private void fillList() {
         List = new ArrayList<>();
-        List.add(new Item(R.drawable.ic_baseline_star_24, "One","@noahflower", "Ten"));
+        List.add(new Item(R.drawable.pizza2, "Mozzarella Pizza","@jennifer21", "#mozzarella #Italian"));
         List.add(new Item(R.drawable.sushi1, "Sushi", "@noahflower","#Rice #Asian #SeaWeed"));
-        List.add(new Item(R.drawable.pizza1, "Pizza1","@noahflower", "Twelve"));
-        List.add(new Item(R.drawable.pizza2, "Pizza2","@noahflower", "Thirteen"));
-        List.add(new Item(R.drawable.pizza3, "Pizza3","@noahflower", "Fourteen"));
-        List.add(new Item(R.drawable.pizza4, "Pizza4","@noahflower", "Fifteen"));
-        List.add(new Item(R.drawable.francesinha, "Seven","@noahflower", "Sixteen"));
-        List.add(new Item(R.drawable.hamburger, "Eight","@noahflower", "#Meat #Lettuce"));
-        List.add(new Item(R.drawable.ic_baseline_access_time_24, "Nine","@noahflower", "Eighteen"));
+        List.add(new Item(R.drawable.pasta, "Shrimp Pasta","@emily1miller", "#Shrimp #Fish #Italian"));
+        List.add(new Item(R.drawable.salmon, "Oven-baked Salmon with spices","@noahflower", "#Fish #Asian"));
+        List.add(new Item(R.drawable.hamburger, "Hamburger","@noahflower", "#Meat #Lettuce"));
     }
 
     private void setUpRecyclerView() {
@@ -120,8 +119,21 @@ public class SearchRecipesActivity extends AppCompatActivity implements Adapter.
         switch (recipe){
             case "Sushi":
                 startActivity(new Intent(SearchRecipesActivity.this,  PostActvity.class));
+                break;
+            case "Mozzarella Pizza":
+                startActivity(new Intent(SearchRecipesActivity.this,  PostActvity2.class));
+                break;
+            case "Shrimp Pasta":
+                startActivity(new Intent(SearchRecipesActivity.this,  PostActvity3.class));
+                break;
+            case "Oven-baked Salmon with spices":
+                startActivity(new Intent(SearchRecipesActivity.this,  PostActvity4.class));
+                break;
+            case "Hamburger":
+                startActivity(new Intent(SearchRecipesActivity.this,  PostActvity4.class));
+                break;
             default:
-                startActivity(new Intent(SearchRecipesActivity.this,  PostActvity.class));
+                startActivity(new Intent(SearchRecipesActivity.this,  PostActvity4.class));
         }
 
     }

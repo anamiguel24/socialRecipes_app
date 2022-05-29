@@ -4,7 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.PopupMenu;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -56,11 +59,43 @@ public class FeedActivity extends AppCompatActivity {
             }
         });
 
+        AppCompatImageView image2 = findViewById(R.id.image2);
+        image2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(FeedActivity.this,  PostActvity2.class));
+            }
+        });
+
         TextView user3 = findViewById(R.id.user3);
         user3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(FeedActivity.this,  UserProfileActivity.class));
+            }
+        });
+
+        AppCompatImageView image3 = findViewById(R.id.image3);
+        image3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(FeedActivity.this,  PostActvity3.class));
+            }
+        });
+
+        TextView user4 = findViewById(R.id.user4);
+        user3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(FeedActivity.this,  UserProfileActivity.class));
+            }
+        });
+
+        AppCompatImageView image4 = findViewById(R.id.image4);
+        image4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(FeedActivity.this,  PostActvity4.class));
             }
         });
 
@@ -71,6 +106,111 @@ public class FeedActivity extends AppCompatActivity {
                 startActivity(new Intent(FeedActivity.this,  SearchRecipesActivity.class));
             }
         });
+
+        // ADD TO CALENDAR DROPDOWN MENU
+        ImageView calendarB = (ImageView) findViewById(R.id.addcalendar);
+        calendarB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Creating the instance of PopupMenu
+                PopupMenu popup = new PopupMenu(FeedActivity.this, calendarB);
+                //Inflating the Popup using xml file
+                popup.getMenuInflater()
+                        .inflate(R.menu.add_to_calendar_menu, popup.getMenu());
+
+                //registering popup with OnMenuItemClickListener
+                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    public boolean onMenuItemClick(MenuItem item) {
+                        Toast.makeText(
+                                FeedActivity.this,
+                                "Recipe added on " + item.getTitle(),
+                                Toast.LENGTH_SHORT
+                        ).show();
+                        return true;
+                    }
+                });
+
+                popup.show(); //showing popup menu
+            }
+        }); //closing the setOnClickListener metho
+
+        ImageView calendarB2 = (ImageView) findViewById(R.id.addcalendar2);
+        calendarB2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Creating the instance of PopupMenu
+                PopupMenu popup = new PopupMenu(FeedActivity.this, calendarB);
+                //Inflating the Popup using xml file
+                popup.getMenuInflater()
+                        .inflate(R.menu.add_to_calendar_menu, popup.getMenu());
+
+                //registering popup with OnMenuItemClickListener
+                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    public boolean onMenuItemClick(MenuItem item) {
+                        Toast.makeText(
+                                FeedActivity.this,
+                                "Recipe added on " + item.getTitle(),
+                                Toast.LENGTH_SHORT
+                        ).show();
+                        return true;
+                    }
+                });
+
+                popup.show(); //showing popup menu
+            }
+        }); //closing the setOnClickListener metho
+
+        ImageView calendarB3 = (ImageView) findViewById(R.id.addcalendar3);
+        calendarB3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Creating the instance of PopupMenu
+                PopupMenu popup = new PopupMenu(FeedActivity.this, calendarB);
+                //Inflating the Popup using xml file
+                popup.getMenuInflater()
+                        .inflate(R.menu.add_to_calendar_menu, popup.getMenu());
+
+                //registering popup with OnMenuItemClickListener
+                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    public boolean onMenuItemClick(MenuItem item) {
+                        Toast.makeText(
+                                FeedActivity.this,
+                                "Recipe added on " + item.getTitle(),
+                                Toast.LENGTH_SHORT
+                        ).show();
+                        return true;
+                    }
+                });
+
+                popup.show(); //showing popup menu
+            }
+        }); //closing the setOnClickListener metho
+
+        ImageView calendarB4 = (ImageView) findViewById(R.id.addcalendar4);
+        calendarB4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Creating the instance of PopupMenu
+                PopupMenu popup = new PopupMenu(FeedActivity.this, calendarB);
+                //Inflating the Popup using xml file
+                popup.getMenuInflater()
+                        .inflate(R.menu.add_to_calendar_menu, popup.getMenu());
+
+                //registering popup with OnMenuItemClickListener
+                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    public boolean onMenuItemClick(MenuItem item) {
+                        Toast.makeText(
+                                FeedActivity.this,
+                                "Recipe added on " + item.getTitle(),
+                                Toast.LENGTH_SHORT
+                        ).show();
+                        return true;
+                    }
+                });
+
+                popup.show(); //showing popup menu
+            }
+        }); //closing the setOnClickListener metho
 
 
         // bottom bar
