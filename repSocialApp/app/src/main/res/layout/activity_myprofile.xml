@@ -39,7 +39,7 @@
     android:layout_marginTop="16dp"
     android:gravity="center_horizontal"
     android:letterSpacing="0.025"
-    android:text="\@noahflower"
+    android:text="\@patricks14"
     android:textColor="@color/white"
     android:textSize="28sp"
     android:textStyle="bold"
@@ -83,7 +83,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:text="Noah Flores"
+            android:text="Patrick Smith"
             android:textAllCaps="true"
             android:textColor="@color/teal_700"
             android:textSize="16sp"
@@ -96,7 +96,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="Aveiro, Portugal"
+            android:text="Dublin, Ireland"
             android:textColor="@android:color/black"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="@+id/textView2"
@@ -160,7 +160,7 @@
                     android:id="@+id/textView9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="4,6"
+                    android:text="3,8"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:gravity="center"/>
@@ -183,7 +183,7 @@
                     android:id="@+id/textView10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="2M"
+                    android:text="124"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:gravity="center"/>
@@ -206,7 +206,7 @@
                     android:id="@+id/textView12"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="8540"
+                    android:text="1147"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:gravity="center"/>
@@ -310,7 +310,7 @@
                             android:layout_width="170dp"
                             android:layout_height="140dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/noodles"
+                            android:src="@drawable/bowl_oat"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.5"
                             app:layout_constraintStart_toStartOf="parent"
@@ -334,8 +334,8 @@
                                     android:id="@+id/name3"
                                     android:layout_width="120dp"
                                     android:layout_height="wrap_content"
-                                    android:gravity="center"
-                                    android:text="Noodles"
+                                    android:paddingLeft="5dp"
+                                    android:text="Oat Bowl"
                                     android:textAllCaps="true"
                                     android:textColor="@color/teal_700"
                                     android:textSize="14sp"
@@ -358,7 +358,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="20dp"
                                     android:gravity="center"
-                                    android:text="4,2"
+                                    android:text="4,5"
                                     android:textAllCaps="true"
                                     android:textColor="@color/teal_700"
                                     android:textSize="10sp" />
@@ -410,7 +410,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="20dp"
                                     android:gravity="center"
-                                    android:text="medium"
+                                    android:text="Easy"
                                     android:textAllCaps="true"
                                     android:textColor="@color/teal_700"
                                     android:textSize="9sp" />
@@ -443,7 +443,7 @@
                             android:layout_width="170dp"
                             android:layout_height="140dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/salmon"
+                            android:src="@drawable/pancakes1"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.5"
                             app:layout_constraintStart_toStartOf="parent"
@@ -467,7 +467,7 @@
                                     android:id="@+id/name4"
                                     android:layout_width="120dp"
                                     android:layout_height="wrap_content"
-                                    android:gravity="center"
+                                    android:paddingLeft="5dp"
                                     android:text="Salmon"
                                     android:textAllCaps="true"
                                     android:textColor="@color/teal_700"
@@ -491,7 +491,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="20dp"
                                     android:gravity="center"
-                                    android:text="4.9"
+                                    android:text="4.7"
                                     android:textAllCaps="true"
                                     android:textColor="@color/teal_700"
                                     android:textSize="10sp" />
@@ -543,7 +543,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="20dp"
                                     android:gravity="center"
-                                    android:text="medium"
+                                    android:text="Medium"
                                     android:textAllCaps="true"
                                     android:textColor="@color/teal_700"
                                     android:textSize="9sp" />
@@ -559,7 +559,7 @@
 
             <LinearLayout
                 android:id="@+id/linearLayout"
-                android:layout_width="match_parent"
+                android:layout_width="195dp"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:orientation="horizontal"
@@ -586,7 +586,7 @@
                             android:layout_width="170dp"
                             android:layout_height="140dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/sushi1"
+                            android:src="@drawable/bread"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.0"
                             app:layout_constraintStart_toStartOf="parent"
@@ -610,8 +610,8 @@
                                     android:id="@+id/textView1"
                                     android:layout_width="120dp"
                                     android:layout_height="wrap_content"
-                                    android:gravity="center"
-                                    android:text="Sushi"
+                                    android:paddingLeft="5dp"
+                                    android:text="Bread"
                                     android:textAllCaps="true"
                                     android:textColor="@color/teal_700"
                                     android:textSize="14sp"
@@ -634,293 +634,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="20dp"
                                     android:gravity="center"
-                                    android:text="3,9"
-                                    android:textAllCaps="true"
-                                    android:textColor="@color/teal_700"
-                                    android:textSize="10sp" />
-
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="20dp"
-                                android:orientation="horizontal">
-
-                                <ImageButton
-                                    android:id="@+id/p_time"
-                                    android:layout_width="18dp"
-                                    android:layout_height="18dp"
-                                    android:background="?attr/selectableItemBackground"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/ic_baseline_watch_later_24"
-                                    app:layout_constraintBottom_toBottomOf="parent"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintVertical_bias="0.098" />
-
-                                <TextView
-                                    android:id="@+id/time1"
-                                    android:layout_width="47dp"
-                                    android:layout_height="20dp"
-                                    android:gravity="center"
-                                    android:text="30 Min."
-                                    android:textAllCaps="true"
-                                    android:textColor="@color/teal_700"
-                                    android:textSize="9sp" />
-
-                                <ImageButton
-                                    android:id="@+id/p_difficulty"
-                                    android:layout_width="18dp"
-                                    android:layout_height="18dp"
-                                    android:background="?attr/selectableItemBackground"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/ic_baseline_signal_difficulty"
-                                    app:layout_constraintBottom_toBottomOf="parent"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintVertical_bias="0.098" />
-
-                                <TextView
-                                    android:id="@+id/difficulty1"
-                                    android:layout_width="55dp"
-                                    android:layout_height="20dp"
-                                    android:gravity="center"
-                                    android:text="Hard"
-                                    android:textAllCaps="true"
-                                    android:textColor="@color/teal_700"
-                                    android:textSize="9sp" />
-
-                                <TextView
-                                    android:id="@+id/people1"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="20dp"
-                                    android:gravity="center"
-                                    android:text="(249)"
-                                    android:textAllCaps="true"
-                                    android:textColor="@color/teal_700"
-                                    android:textSize="9sp" />
-
-                            </LinearLayout>
-                        </LinearLayout>
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/Card2"
-                    android:layout_width="170dp"
-                    android:layout_height="180dp"
-                    android:layout_margin="8dp"
-                    android:layout_marginStart="16dp"
-                    android:clickable="true"
-                    android:elevation="12dp"
-                    android:focusable="true"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    app:cardCornerRadius="8dp">
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <ImageView
-                            android:id="@+id/image_view2"
-                            android:layout_width="170dp"
-                            android:layout_height="140dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/salmon"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.0"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <LinearLayout
-                            android:layout_width="170dp"
-                            android:layout_height="40dp"
-                            android:orientation="vertical"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/image_view2">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="20dp"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:id="@+id/name2"
-                                    android:layout_width="120dp"
-                                    android:layout_height="wrap_content"
-                                    android:gravity="center"
-                                    android:text="Salmon"
-                                    android:textAllCaps="true"
-                                    android:textColor="@color/teal_700"
-                                    android:textSize="14sp"
-                                    android:textStyle="bold" />
-
-                                <ImageButton
-                                    android:id="@+id/p_rating2"
-                                    android:layout_width="18dp"
-                                    android:layout_height="18dp"
-                                    android:background="?attr/selectableItemBackground"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/ic_baseline_star_24"
-                                    app:layout_constraintBottom_toBottomOf="parent"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintVertical_bias="0.098" />
-
-                                <TextView
-                                    android:id="@+id/rating2"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="20dp"
-                                    android:gravity="center"
-                                    android:text="4.9"
-                                    android:textAllCaps="true"
-                                    android:textColor="@color/teal_700"
-                                    android:textSize="10sp" />
-
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="20dp"
-                                android:orientation="horizontal">
-
-                                <ImageButton
-                                    android:id="@+id/p_time2"
-                                    android:layout_width="18dp"
-                                    android:layout_height="18dp"
-                                    android:background="?attr/selectableItemBackground"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/ic_baseline_watch_later_24"
-                                    app:layout_constraintBottom_toBottomOf="parent"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintVertical_bias="0.098" />
-
-                                <TextView
-                                    android:id="@+id/time2"
-                                    android:layout_width="72dp"
-                                    android:layout_height="20dp"
-                                    android:gravity="center"
-                                    android:text="30 Min."
-                                    android:textAllCaps="true"
-                                    android:textColor="@color/teal_700"
-                                    android:textSize="9sp" />
-
-                                <ImageButton
-                                    android:id="@+id/p_difficulty2"
-                                    android:layout_width="18dp"
-                                    android:layout_height="18dp"
-                                    android:background="?attr/selectableItemBackground"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/ic_baseline_signal_difficulty"
-                                    app:layout_constraintBottom_toBottomOf="parent"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintVertical_bias="0.098" />
-
-                                <TextView
-                                    android:id="@+id/difficulty2"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="20dp"
-                                    android:gravity="center"
-                                    android:text="medium"
-                                    android:textAllCaps="true"
-                                    android:textColor="@color/teal_700"
-                                    android:textSize="9sp" />
-
-                            </LinearLayout>
-                        </LinearLayout>
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                </androidx.cardview.widget.CardView>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/linearLayout5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:orientation="horizontal"
-                android:weightSum="2">
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/Card5"
-                    android:layout_width="170dp"
-                    android:layout_height="180dp"
-                    android:layout_margin="8dp"
-                    android:layout_marginStart="16dp"
-                    android:clickable="true"
-                    android:elevation="12dp"
-                    android:focusable="true"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    app:cardCornerRadius="8dp">
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <ImageView
-                            android:id="@+id/image_view5"
-                            android:layout_width="170dp"
-                            android:layout_height="140dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/noodles"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.5"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <LinearLayout
-                            android:layout_width="170dp"
-                            android:layout_height="40dp"
-                            android:orientation="vertical"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/image_view3">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="20dp"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:id="@+id/name5"
-                                    android:layout_width="120dp"
-                                    android:layout_height="wrap_content"
-                                    android:gravity="center"
-                                    android:text="Noodles"
-                                    android:textAllCaps="true"
-                                    android:textColor="@color/teal_700"
-                                    android:textSize="14sp"
-                                    android:textStyle="bold" />
-
-                                <ImageButton
-                                    android:id="@+id/p_rating5"
-                                    android:layout_width="18dp"
-                                    android:layout_height="18dp"
-                                    android:background="?attr/selectableItemBackground"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/ic_baseline_star_24"
-                                    app:layout_constraintBottom_toBottomOf="parent"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintVertical_bias="0.098" />
-
-                                <TextView
-                                    android:id="@+id/rating5"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="20dp"
-                                    android:gravity="center"
-                                    android:text="4,2"
+                                    android:text="3,6"
                                     android:textAllCaps="true"
                                     android:textColor="@color/teal_700"
                                     android:textSize="10sp" />
@@ -950,7 +664,7 @@
                                     android:layout_width="72dp"
                                     android:layout_height="20dp"
                                     android:gravity="center"
-                                    android:text="18 Min."
+                                    android:text="55 Min."
                                     android:textAllCaps="true"
                                     android:textColor="@color/teal_700"
                                     android:textSize="9sp" />
@@ -972,140 +686,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="20dp"
                                     android:gravity="center"
-                                    android:text="medium"
-                                    android:textAllCaps="true"
-                                    android:textColor="@color/teal_700"
-                                    android:textSize="9sp" />
-
-                            </LinearLayout>
-                        </LinearLayout>
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/Card6"
-                    android:layout_width="170dp"
-                    android:layout_height="180dp"
-                    android:layout_margin="8dp"
-                    android:layout_marginStart="16dp"
-                    android:clickable="true"
-                    android:elevation="12dp"
-                    android:focusable="true"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    app:cardCornerRadius="8dp">
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <ImageView
-                            android:id="@+id/image_view6"
-                            android:layout_width="170dp"
-                            android:layout_height="140dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/salmon"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.5"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <LinearLayout
-                            android:layout_width="170dp"
-                            android:layout_height="40dp"
-                            android:orientation="vertical"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/image_view6">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="20dp"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:id="@+id/name6"
-                                    android:layout_width="120dp"
-                                    android:layout_height="wrap_content"
-                                    android:gravity="center"
-                                    android:text="Salmon"
-                                    android:textAllCaps="true"
-                                    android:textColor="@color/teal_700"
-                                    android:textSize="14sp"
-                                    android:textStyle="bold" />
-
-                                <ImageButton
-                                    android:id="@+id/p_rating6"
-                                    android:layout_width="18dp"
-                                    android:layout_height="18dp"
-                                    android:background="?attr/selectableItemBackground"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/ic_baseline_star_24"
-                                    app:layout_constraintBottom_toBottomOf="parent"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintVertical_bias="0.098" />
-
-                                <TextView
-                                    android:id="@+id/rating6"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="20dp"
-                                    android:gravity="center"
-                                    android:text="4.9"
-                                    android:textAllCaps="true"
-                                    android:textColor="@color/teal_700"
-                                    android:textSize="10sp" />
-
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="20dp"
-                                android:orientation="horizontal">
-
-                                <ImageButton
-                                    android:id="@+id/p_time6"
-                                    android:layout_width="18dp"
-                                    android:layout_height="18dp"
-                                    android:background="?attr/selectableItemBackground"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/ic_baseline_watch_later_24"
-                                    app:layout_constraintBottom_toBottomOf="parent"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintVertical_bias="0.098" />
-
-                                <TextView
-                                    android:id="@+id/time6"
-                                    android:layout_width="72dp"
-                                    android:layout_height="20dp"
-                                    android:gravity="center"
-                                    android:text="30 Min."
-                                    android:textAllCaps="true"
-                                    android:textColor="@color/teal_700"
-                                    android:textSize="9sp" />
-
-                                <ImageButton
-                                    android:id="@+id/p_difficulty6"
-                                    android:layout_width="18dp"
-                                    android:layout_height="18dp"
-                                    android:background="?attr/selectableItemBackground"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/ic_baseline_signal_difficulty"
-                                    app:layout_constraintBottom_toBottomOf="parent"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintVertical_bias="0.098" />
-
-                                <TextView
-                                    android:id="@+id/difficulty6"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="20dp"
-                                    android:gravity="center"
-                                    android:text="medium"
+                                    android:text="Hard"
                                     android:textAllCaps="true"
                                     android:textColor="@color/teal_700"
                                     android:textSize="9sp" />
