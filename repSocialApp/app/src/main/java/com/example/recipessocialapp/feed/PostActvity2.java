@@ -19,6 +19,7 @@ import com.example.recipessocialapp.databinding.ActivityPost1Binding;
 import com.example.recipessocialapp.databinding.ActivityPost2Binding;
 import com.example.recipessocialapp.profilePages.MyProfileActivity;
 import com.example.recipessocialapp.profilePages.UserProfileActivity;
+import com.example.recipessocialapp.profilePages.UserProfileActivity2;
 import com.example.recipessocialapp.shoppinglist.ShoppingListActivity;
 import com.example.recipessocialapp.weeklyplan.WeeklyPlanActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -46,7 +47,7 @@ public class PostActvity2 extends AppCompatActivity {
         user1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(PostActvity2.this,  UserProfileActivity.class));
+                startActivity(new Intent(PostActvity2.this,  UserProfileActivity2.class));
             }
         });
 
