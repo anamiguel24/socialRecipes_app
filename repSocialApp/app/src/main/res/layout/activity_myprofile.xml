@@ -139,7 +139,11 @@
 
         <LinearLayout
             android:id="@+id/linearLayout3"
+<<<<<<< HEAD
+            android:layout_width="380dp"
+=======
             android:layout_width="match_parent"
+>>>>>>> 2d3cab64887a996f33316b72aff5add6316ec265
             android:layout_height="55dp"
             android:orientation="horizontal"
             android:weightSum="100"
@@ -153,14 +157,18 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+<<<<<<< HEAD
+                android:layout_weight="18"
+=======
                 android:layout_weight="15"
+>>>>>>> 2d3cab64887a996f33316b72aff5add6316ec265
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="3,8"
+                    android:text="4,3"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:gravity="center"/>
@@ -176,7 +184,11 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+<<<<<<< HEAD
+                android:layout_weight="25"
+=======
                 android:layout_weight="20"
+>>>>>>> 2d3cab64887a996f33316b72aff5add6316ec265
                 android:orientation="vertical">
 
                 <TextView
@@ -199,7 +211,11 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+<<<<<<< HEAD
+                android:layout_weight="25"
+=======
                 android:layout_weight="20"
+>>>>>>> 2d3cab64887a996f33316b72aff5add6316ec265
                 android:orientation="vertical">
 
                 <TextView
@@ -243,6 +259,14 @@
                     android:text="Recipes" />
             </LinearLayout>
 
+<<<<<<< HEAD
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/followB"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_weight="12"
+                android:layout_marginStart="5dp"
+=======
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -253,6 +277,7 @@
                 android:id="@+id/followB"
                 android:layout_width="0dp"
                 android:layout_height="40dp"
+>>>>>>> 2d3cab64887a996f33316b72aff5add6316ec265
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="5dp"
@@ -261,7 +286,10 @@
                 android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+<<<<<<< HEAD
+=======
                 android:layout_weight="25"
+>>>>>>> 2d3cab64887a996f33316b72aff5add6316ec265
                 app:layout_constraintTop_toBottomOf="@+id/profileB"
                 app:layout_constraintVertical_bias="0.266" />
 
@@ -477,7 +505,7 @@
                                     android:layout_width="120dp"
                                     android:layout_height="wrap_content"
                                     android:paddingLeft="5dp"
-                                    android:text="Salmon"
+                                    android:text="Pancakes"
                                     android:textAllCaps="true"
                                     android:textColor="@color/teal_700"
                                     android:textSize="14sp"
@@ -568,7 +596,7 @@
 
             <LinearLayout
                 android:id="@+id/linearLayout"
-                android:layout_width="195dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:orientation="horizontal"
