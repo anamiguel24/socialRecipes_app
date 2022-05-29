@@ -51,6 +51,8 @@
         <activity
             android:name=".search.SearchRecipesActivity"
             android:label="Search" />
+        <activity android:name=".createpost.CreatepostActivity"
+            android:label="Create Post"/>
     </application>
 
 </manifest>
