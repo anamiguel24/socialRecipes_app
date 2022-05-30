@@ -102,27 +102,6 @@
             app:layout_constraintStart_toStartOf="@+id/textView2"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-        <!--       <com.google.android.material.button.MaterialButton
-            android:id="@+id/todoB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginBottom="8dp"
-            android:text="TODO LIST"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />-->
-
-        <!--      <com.google.android.material.button.MaterialButton
-            android:id="@+id/editProfileB"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:text="EDIT PROFILE"
-            android:textColor="@color/white"
-            app:layout_constraintBottom_toBottomOf="@+id/todoB"
-            app:layout_constraintStart_toEndOf="@+id/todoB" />-->
-
         <ImageButton
             android:id="@+id/profileB"
             android:layout_width="67dp"
@@ -264,15 +243,12 @@
 
 </androidx.cardview.widget.CardView>
 
-<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true">-->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="195dp"
-        android:layout_marginBottom="70dp">
+        android:layout_marginBottom="70dp"
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
