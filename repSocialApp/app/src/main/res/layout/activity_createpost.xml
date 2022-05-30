@@ -51,20 +51,6 @@
         app:layout_constraintStart_toEndOf="@+id/backB"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/logOutB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="360dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="?attr/selectableItemBackground"
-        android:padding="8dp"
-        android:src="@drawable/ic_more"
-        app:layout_constraintCircleRadius="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
 
     <ScrollView
         android:id="@+id/scroll_feed"
@@ -76,7 +62,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="70dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="70dp">
+        android:layout_marginBottom="70dp"
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -104,10 +91,17 @@
                     android:text="Add image" />
             </LinearLayout>
 
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#696969"
+                android:focusable="false" />
+
             <EditText
                 android:id="@+id/Title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:ems="10"
                 android:hint="Enter title"
                 android:inputType="textPersonName"></EditText>
@@ -243,7 +237,7 @@
                 android:id="@+id/nutriInfoText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginBottom="10dp"
                 android:text="Nutritional Information per portion"
                 android:textColor="@color/teal_700"
@@ -346,8 +340,8 @@
                 android:id="@+id/addIngredientsText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="0dp"
                 android:text="Add ingredients"
                 android:textColor="@color/teal_700"
                 android:textSize="20dp"
@@ -401,8 +395,8 @@
                 android:id="@+id/addStepsText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="0dp"
                 android:text="Add steps"
                 android:textColor="@color/teal_700"
                 android:textSize="20dp"
@@ -420,7 +414,7 @@
                 android:id="@+id/addCategoriesText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginBottom="10dp"
                 android:text="Add categories"
                 android:textColor="@color/teal_700"
@@ -443,7 +437,7 @@
                     android:id="@+id/TypedTag"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="9dp"
+                    android:layout_marginTop="0dp"
                     android:layout_weight="80"
                     android:hint="Enter Category"
                     android:textSize="16sp"
@@ -466,6 +460,7 @@
                 android:id="@+id/submit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
                 android:text="Submit" />
 
         </LinearLayout>

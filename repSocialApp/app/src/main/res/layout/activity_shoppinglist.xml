@@ -115,49 +115,50 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:weightSum="100"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:weightSum="100">
 
                     <CheckBox
                         android:layout_width="0dp"
-                        android:text="Oil"
-                        android:textSize="16dp"
-                        android:buttonTint="@color/teal_200"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="50">
-                    </CheckBox>
-                    <TextView
-                        android:layout_width="0dp"
-                        android:textSize="16dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="50"
+                        android:buttonTint="@color/teal_200"
+                        android:text="Oil"
+                        android:textSize="16dp"></CheckBox>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:text="1 soup spoon"
                         android:textColor="@color/black"
-                        android:text="1 soup spoon">
+                        android:textSize="16dp">
 
                     </TextView>
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:weightSum="100"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:weightSum="100">
 
                     <CheckBox
                         android:layout_width="0dp"
-                        android:text="Tomato"
-                        android:textSize="16dp"
-                        android:buttonTint="@color/teal_200"
                         android:layout_height="wrap_content"
-                        android:layout_weight="50">
-                    </CheckBox>
+                        android:layout_weight="50"
+                        android:buttonTint="@color/teal_200"
+                        android:text="Tomato"
+                        android:textSize="16dp"></CheckBox>
+
                     <TextView
-                        android:textSize="16dp"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="50"
+                        android:text="5"
                         android:textColor="@color/black"
-                        android:text="5">
+                        android:textSize="16dp">
 
                     </TextView>
 
@@ -166,12 +167,11 @@
             </LinearLayout>
 
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:weightSum="100"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:weightSum="100">
 
                 <EditText
                     android:id="@+id/TypedIngredient"
@@ -182,6 +182,7 @@
                     android:hint="Enter Ingredient"
                     android:textSize="16sp"
                     android:textStyle="bold" />
+
                 <EditText
                     android:id="@+id/TypedQuantity"
                     android:layout_width="wrap_content"
@@ -191,11 +192,12 @@
                     android:hint="Enter Quantity"
                     android:textSize="16sp"
                     android:textStyle="bold" />
+
                 <ImageButton
                     android:id="@+id/plusB"
                     android:layout_width="0dp"
-                    android:layout_weight="20"
                     android:layout_height="match_parent"
+                    android:layout_weight="20"
                     android:background="?attr/selectableItemBackground"
                     android:padding="8dp"
                     android:src="@drawable/ic_baseline_add_24"
@@ -228,49 +230,50 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:weightSum="100"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:weightSum="100">
 
                     <CheckBox
                         android:layout_width="0dp"
-                        android:textSize="16dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:buttonTint="@color/teal_200"
                         android:text="Salt"
-                        android:buttonTint="@color/teal_200"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="50">
-                    </CheckBox>
+                        android:textSize="16dp"></CheckBox>
+
                     <TextView
-                        android:textSize="16dp"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="50"
+                        android:text="1 tea Spoon"
                         android:textColor="@color/black"
-                        android:text="1 tea Spoon">
+                        android:textSize="16dp">
 
                     </TextView>
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:weightSum="100"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:weightSum="100">
 
                     <CheckBox
                         android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:buttonTint="@color/teal_200"
                         android:text="Sugar"
-                        android:textSize="16dp"
-                        android:buttonTint="@color/teal_200"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="50">
-                    </CheckBox>
+                        android:textSize="16dp"></CheckBox>
+
                     <TextView
                         android:layout_width="0dp"
-                        android:textSize="16dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="50"
+                        android:text="11 kg"
                         android:textColor="@color/black"
-                        android:text="11 kg">
+                        android:textSize="16dp">
 
                     </TextView>
 
@@ -279,24 +282,24 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:weightSum="100"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:weightSum="100">
 
                     <CheckBox
                         android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:buttonTint="@color/teal_200"
                         android:text="Pumpkin"
-                        android:textSize="16dp"
-                        android:buttonTint="@color/teal_200"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="50">
-                    </CheckBox>
+                        android:textSize="16dp"></CheckBox>
+
                     <TextView
                         android:layout_width="0dp"
-                        android:textSize="16dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="50"
+                        android:text="2"
                         android:textColor="@color/black"
-                        android:text="2">
+                        android:textSize="16dp">
 
                     </TextView>
 
@@ -305,31 +308,30 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:weightSum="100"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:weightSum="100">
 
                     <CheckBox
                         android:layout_width="0dp"
-                        android:text="Egg"
-                        android:textSize="16dp"
-                        android:buttonTint="@color/teal_200"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="50">
-                    </CheckBox>
-                    <TextView
-                        android:layout_width="0dp"
-                        android:textSize="16dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="50"
+                        android:buttonTint="@color/teal_200"
+                        android:text="Egg"
+                        android:textSize="16dp"></CheckBox>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:text="58"
                         android:textColor="@color/black"
-                        android:text="58">
+                        android:textSize="16dp">
 
                     </TextView>
 
                 </LinearLayout>
 
             </LinearLayout>
-
 
 
         </LinearLayout>
