@@ -47,8 +47,8 @@ public class FeedActivity extends AppCompatActivity {
             }
         });
 
-        AppCompatImageView image1 = findViewById(R.id.image1);
-        image1.setOnClickListener(new View.OnClickListener() {
+        View pc1 = findViewById(R.id.PostCard1);
+        pc1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(FeedActivity.this,  PostActvity.class));
@@ -63,8 +63,8 @@ public class FeedActivity extends AppCompatActivity {
             }
         });
 
-        AppCompatImageView image2 = findViewById(R.id.image2);
-        image2.setOnClickListener(new View.OnClickListener() {
+        View pc2 = findViewById(R.id.PostCard2);
+        pc2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(FeedActivity.this,  PostActvity2.class));
@@ -79,8 +79,8 @@ public class FeedActivity extends AppCompatActivity {
             }
         });
 
-        AppCompatImageView image3 = findViewById(R.id.image3);
-        image3.setOnClickListener(new View.OnClickListener() {
+        View pc3 = findViewById(R.id.PostCard3);
+        pc3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(FeedActivity.this,  PostActvity3.class));
@@ -95,8 +95,8 @@ public class FeedActivity extends AppCompatActivity {
             }
         });
 
-        AppCompatImageView image4 = findViewById(R.id.image4);
-        image4.setOnClickListener(new View.OnClickListener() {
+        View pc4 = findViewById(R.id.PostCard4);
+        pc4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(FeedActivity.this,  PostActvity4.class));

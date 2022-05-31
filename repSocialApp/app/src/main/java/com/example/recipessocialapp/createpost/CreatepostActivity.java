@@ -108,6 +108,9 @@ public class CreatepostActivity extends AppCompatActivity {
                 ly.addView(quantity);
 
                 custom.addView(ly);
+
+                ing.getText().clear();
+                qty.getText().clear();
             }
         });
 
