@@ -2,6 +2,7 @@ package com.example.recipessocialapp.createpost;
 
 import android.content.Intent;
 import android.content.res.ColorStateList;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -51,11 +52,18 @@ public class CreatepostActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
-                Toast.makeText(
+                Toast toast = Toast.makeText(
                         CreatepostActivity.this,
                         "Recipe "+"\""+((EditText)findViewById(R.id.Title)).getText()+"\""+" added succesfully to your profile!",
-                        Toast.LENGTH_SHORT
-                ).show();
+                        Toast.LENGTH_LONG);
+                View view = toast.getView();
+                //Gets the actual oval background of the Toast then sets the colour filter
+                view.getBackground().setColorFilter(getResources().getColor(R.color.teal_700), PorterDuff.Mode.SRC_IN);
+                //Gets the TextView from the Toast so it can be editted
+                TextView text = view.findViewById(android.R.id.message);
+                text.setTextColor(getResources().getColor(R.color.white));
+                text.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+                toast.show();
             }
         });
 

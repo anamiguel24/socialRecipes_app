@@ -1,9 +1,11 @@
 package com.example.recipessocialapp.feed;
 
 import android.content.Intent;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
@@ -125,11 +127,16 @@ public class FeedActivity extends AppCompatActivity {
                 //registering popup with OnMenuItemClickListener
                 popup3.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     public boolean onMenuItemClick(MenuItem item) {
-                        Toast.makeText(
-                                FeedActivity.this,
+                        Toast toast = Toast.makeText(
+                                getApplicationContext(),
                                 "Recipe added on " + chosen_day +", "+ chosen_week,
-                                Toast.LENGTH_SHORT
-                        ).show();
+                                Toast.LENGTH_LONG);
+                        View view = toast.getView();
+                        view.getBackground().setColorFilter(getResources().getColor(R.color.teal_700), PorterDuff.Mode.SRC_IN);
+                        TextView text = view.findViewById(android.R.id.message);
+                        text.setTextColor(getResources().getColor(R.color.white));
+                        text.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+                        toast.show();
                         return true;
                     }
                 });
@@ -178,11 +185,16 @@ public class FeedActivity extends AppCompatActivity {
                 //registering popup with OnMenuItemClickListener
                 popup3.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     public boolean onMenuItemClick(MenuItem item) {
-                        Toast.makeText(
-                                FeedActivity.this,
+                        Toast toast = Toast.makeText(
+                                getApplicationContext(),
                                 "Recipe added on " + chosen_day +", "+ chosen_week,
-                                Toast.LENGTH_SHORT
-                        ).show();
+                                Toast.LENGTH_LONG);
+                        View view = toast.getView();
+                        view.getBackground().setColorFilter(getResources().getColor(R.color.teal_700), PorterDuff.Mode.SRC_IN);
+                        TextView text = view.findViewById(android.R.id.message);
+                        text.setTextColor(getResources().getColor(R.color.white));
+                        text.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+                        toast.show();
                         return true;
                     }
                 });
@@ -231,11 +243,16 @@ public class FeedActivity extends AppCompatActivity {
                 //registering popup with OnMenuItemClickListener
                 popup3.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     public boolean onMenuItemClick(MenuItem item) {
-                        Toast.makeText(
-                                FeedActivity.this,
+                        Toast toast = Toast.makeText(
+                                getApplicationContext(),
                                 "Recipe added on " + chosen_day +", "+ chosen_week,
-                                Toast.LENGTH_SHORT
-                        ).show();
+                                Toast.LENGTH_LONG);
+                        View view = toast.getView();
+                        view.getBackground().setColorFilter(getResources().getColor(R.color.teal_700), PorterDuff.Mode.SRC_IN);
+                        TextView text = view.findViewById(android.R.id.message);
+                        text.setTextColor(getResources().getColor(R.color.white));
+                        text.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+                        toast.show();
                         return true;
                     }
                 });
@@ -284,11 +301,16 @@ public class FeedActivity extends AppCompatActivity {
                 //registering popup with OnMenuItemClickListener
                 popup3.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     public boolean onMenuItemClick(MenuItem item) {
-                        Toast.makeText(
-                                FeedActivity.this,
+                        Toast toast = Toast.makeText(
+                                getApplicationContext(),
                                 "Recipe added on " + chosen_day +", "+ chosen_week,
-                                Toast.LENGTH_SHORT
-                        ).show();
+                                Toast.LENGTH_LONG);
+                        View view = toast.getView();
+                        view.getBackground().setColorFilter(getResources().getColor(R.color.teal_700), PorterDuff.Mode.SRC_IN);
+                        TextView text = view.findViewById(android.R.id.message);
+                        text.setTextColor(getResources().getColor(R.color.white));
+                        text.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+                        toast.show();
                         return true;
                     }
                 });
