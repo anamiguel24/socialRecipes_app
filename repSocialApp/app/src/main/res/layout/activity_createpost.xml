@@ -465,7 +465,7 @@
                     app:layout_constraintTop_toTopOf="parent" />-->
 
                 <TextView
-                    android:id="@+id/moreCategories"
+                    android:id="@+id/moreTags"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="20"
