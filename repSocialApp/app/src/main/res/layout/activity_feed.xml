@@ -201,6 +201,11 @@
                         android:weightSum="100">
 
                         <ImageView
+                            android:id="@+id/like1"
+                            android:clickable="true"
+                            android:elevation="12dp"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="10"
@@ -439,6 +444,10 @@
                         android:weightSum="100">
 
                         <ImageView
+                            android:id="@+id/like2"
+                            android:clickable="true"
+                            android:elevation="12dp"
+                            android:focusable="true"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="10"
@@ -672,6 +681,10 @@
                         android:weightSum="100">
 
                         <ImageView
+                            android:id="@+id/like3"
+                            android:clickable="true"
+                            android:elevation="12dp"
+                            android:focusable="true"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="10"
@@ -905,6 +918,10 @@
                         android:weightSum="100">
 
                         <ImageView
+                            android:id="@+id/like4"
+                            android:clickable="true"
+                            android:elevation="12dp"
+                            android:focusable="true"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="10"

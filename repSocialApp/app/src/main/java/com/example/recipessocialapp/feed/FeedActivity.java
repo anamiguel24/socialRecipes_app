@@ -32,6 +32,7 @@ public class FeedActivity extends AppCompatActivity {
     private ActivityFeedBinding binding;
     private CharSequence chosen_week="27 June - 03 July";
     private CharSequence chosen_day = "Monday";
+    private int clicks1=0,clicks2=0,clicks3=0,clicks4=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -344,6 +345,54 @@ public class FeedActivity extends AppCompatActivity {
                 });
 
                 popup2.show();
+            }
+        });
+
+        ImageView like1 = findViewById(R.id.like1);
+        like1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(clicks1%2==0)
+                    like1.setImageResource(R.drawable.ic_baseline_thumb_up_24_pressed);
+                else
+                    like1.setImageResource(R.drawable.ic_baseline_thumb_up_24);
+                clicks1++;
+            }
+        });
+
+        ImageView like2 = findViewById(R.id.like2);
+        like2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(clicks2%2==0)
+                    like2.setImageResource(R.drawable.ic_baseline_thumb_up_24_pressed);
+                else
+                    like2.setImageResource(R.drawable.ic_baseline_thumb_up_24);
+                clicks2++;
+            }
+        });
+
+        ImageView like3 = findViewById(R.id.like3);
+        like3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(clicks3%2==0)
+                    like3.setImageResource(R.drawable.ic_baseline_thumb_up_24_pressed);
+                else
+                    like3.setImageResource(R.drawable.ic_baseline_thumb_up_24);
+                clicks3++;
+            }
+        });
+
+        ImageView like4 = findViewById(R.id.like4);
+        like4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(clicks4%2==0)
+                    like4.setImageResource(R.drawable.ic_baseline_thumb_up_24_pressed);
+                else
+                    like4.setImageResource(R.drawable.ic_baseline_thumb_up_24);
+                clicks4++;
             }
         });
 

@@ -134,7 +134,7 @@ public class CreatepostActivity extends AppCompatActivity {
 
         LinearLayout custom2 = (LinearLayout) findViewById(R.id.custom2);
 
-        ImageView plusB2 = findViewById(R.id.moreTags);
+        View plusB2 = findViewById(R.id.moreTags);
         plusB2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
