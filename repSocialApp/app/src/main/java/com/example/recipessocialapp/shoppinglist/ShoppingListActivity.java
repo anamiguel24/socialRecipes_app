@@ -5,11 +5,13 @@ import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -46,7 +48,7 @@ public class ShoppingListActivity extends AppCompatActivity {
 
         LinearLayout custom = (LinearLayout) findViewById(R.id.custom);
 
-        ImageView plusB = findViewById(R.id.plusB);
+        View plusB = findViewById(R.id.plusB);
         plusB.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -62,9 +64,15 @@ public class ShoppingListActivity extends AppCompatActivity {
                 EditText ing = findViewById(R.id.TypedIngredient);
                 ingredient.setText(ing.getText());
 
+                Spinner units = findViewById(R.id.units_spinner);
+
                 TextView quantity = new TextView(getApplicationContext());
                 EditText qty = findViewById(R.id.TypedQuantity);
-                quantity.setText(qty.getText());
+                if (! (units.getSelectedItem().toString().equals("--")))
+                    quantity.setText(qty.getText() + " " + units.getSelectedItem().toString());
+                else
+                    quantity.setText(qty.getText());
+
                 quantity.setTextSize(16);
                 quantity.setHeight(140);
                 quantity.setTextColor(getResources().getColor(R.color.black));
@@ -80,6 +88,10 @@ public class ShoppingListActivity extends AppCompatActivity {
             }
         });
 
+        Spinner spinner = (Spinner) findViewById(R.id.units_spinner);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getApplicationContext(), R.array.units, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
 
 
         BottomNavigationView bottom_bar = findViewById(R.id.bottom_bar);

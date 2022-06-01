@@ -131,7 +131,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="50"
-                        android:text="1 soup spoon"
+                        android:text="25 ml"
                         android:textColor="@color/black"
                         android:textSize="16dp">
 
@@ -176,34 +176,42 @@
 
                 <EditText
                     android:id="@+id/TypedIngredient"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="9dp"
-                    android:layout_weight="40"
-                    android:hint="Enter Ingredient"
+
+                    android:layout_weight="30"
+                    android:hint="Ingredient..."
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/TypedQuantity"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="9dp"
-                    android:layout_weight="40"
-                    android:hint="Enter Quantity"
+                    android:layout_weight="30"
+                    android:hint="Quantity..."
                     android:textSize="16sp"
                     android:textStyle="bold" />
+                <Spinner
+                    android:id="@+id/units_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="25"
+                    android:hint="unit"
+                    android:spinnerMode="dropdown" />
 
-                <ImageButton
+                <TextView
                     android:id="@+id/plusB"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="20"
+                    android:layout_weight="15"
                     android:background="?attr/selectableItemBackground"
-                    android:padding="8dp"
-                    android:src="@drawable/ic_baseline_add_24"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    android:padding="10dp"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:text="Add" />
 
             </LinearLayout>
 
@@ -246,7 +254,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="50"
-                        android:text="1 tea Spoon"
+                        android:text="5 ml"
                         android:textColor="@color/black"
                         android:textSize="16dp">
 

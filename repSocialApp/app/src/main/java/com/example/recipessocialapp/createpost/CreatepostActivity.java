@@ -89,7 +89,7 @@ public class CreatepostActivity extends AppCompatActivity {
 
         LinearLayout custom = (LinearLayout) findViewById(R.id.custom);
 
-        ImageView plusB = findViewById(R.id.moreIngredients);
+        View plusB = findViewById(R.id.moreIngredients);
         plusB.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -104,9 +104,14 @@ public class CreatepostActivity extends AppCompatActivity {
                 EditText ing = findViewById(R.id.TypedIngredient);
                 ingredient.setText(ing.getText());
 
+                Spinner units = findViewById(R.id.units_spinner);
+
                 TextView quantity = new TextView(getApplicationContext());
                 EditText qty = findViewById(R.id.TypedQuantity);
-                quantity.setText(qty.getText());
+                if (! (units.getSelectedItem().toString().equals("--")))
+                    quantity.setText(qty.getText() + " " + units.getSelectedItem().toString());
+                else
+                    quantity.setText(qty.getText());
                 quantity.setTextSize(16);
                 quantity.setHeight(140);
                 quantity.setTextColor(getResources().getColor(R.color.black));
@@ -121,6 +126,11 @@ public class CreatepostActivity extends AppCompatActivity {
                 qty.getText().clear();
             }
         });
+
+        Spinner units = (Spinner) findViewById(R.id.units_spinner);
+        ArrayAdapter<CharSequence> adapteru = ArrayAdapter.createFromResource(getApplicationContext(), R.array.units, android.R.layout.simple_spinner_item);
+        adapteru.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        units.setAdapter(adapteru);
 
         LinearLayout custom2 = (LinearLayout) findViewById(R.id.custom2);
 

@@ -1,6 +1,7 @@
 package com.example.recipessocialapp.weeklyplan;
 
 import android.content.Intent;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -61,11 +63,16 @@ public class WeeklyPlanActivity extends AppCompatActivity {
                 //registering popup with OnMenuItemClickListener
                 popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     public boolean onMenuItemClick(MenuItem item) {
-                        Toast.makeText(
-                                WeeklyPlanActivity.this,
+                        Toast toast = Toast.makeText(
+                                getApplicationContext(),
                                 item.getTitle(),
-                                Toast.LENGTH_SHORT
-                        ).show();
+                                Toast.LENGTH_SHORT);
+                        View view = toast.getView();
+                        view.getBackground().setColorFilter(getResources().getColor(R.color.teal_700), PorterDuff.Mode.SRC_IN);
+                        TextView text = view.findViewById(android.R.id.message);
+                        text.setTextColor(getResources().getColor(R.color.white));
+                        text.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+                        toast.show();
                         week.setText(item.getTitle());
                         return true;
                     }
