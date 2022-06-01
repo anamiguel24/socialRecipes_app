@@ -2,6 +2,7 @@ package com.example.recipessocialapp.shoppinglist;
 
 import android.content.Intent;
 import android.content.res.ColorStateList;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -13,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -34,7 +36,6 @@ public class ShoppingListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // bottom bar
         binding = ActivityShoppinglistBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -92,6 +93,26 @@ public class ShoppingListActivity extends AppCompatActivity {
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getApplicationContext(), R.array.units, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
+
+        View save = findViewById(R.id.save);
+        save.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                finish();
+                Toast toast = Toast.makeText(
+                        getApplicationContext(),
+                        "Your changes were saved!",
+                        Toast.LENGTH_LONG);
+                View view = toast.getView();
+                //Gets the actual oval background of the Toast then sets the colour filter
+                view.getBackground().setColorFilter(getResources().getColor(R.color.teal_700), PorterDuff.Mode.SRC_IN);
+                //Gets the TextView from the Toast so it can be editted
+                TextView text = view.findViewById(android.R.id.message);
+                text.setTextColor(getResources().getColor(R.color.white));
+                text.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+                toast.show();
+            }
+        });
 
 
         BottomNavigationView bottom_bar = findViewById(R.id.bottom_bar);
