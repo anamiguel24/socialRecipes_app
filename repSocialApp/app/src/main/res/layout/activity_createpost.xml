@@ -453,7 +453,7 @@
                     android:textStyle="bold" />
 
 
-                <ImageButton
+<!--                <ImageButton
                     android:id="@+id/moreTags"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -462,7 +462,21 @@
                     android:padding="8dp"
                     android:src="@drawable/ic_baseline_add_24"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent" />-->
+
+                <TextView
+                    android:id="@+id/moreCategories"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="10dp"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:text="Add" />
+
             </LinearLayout>
 
             <Button
@@ -470,7 +484,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:text="Submit" />
+                android:text="Publish" />
 
         </LinearLayout>
 
