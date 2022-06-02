@@ -37,16 +37,13 @@ public class WeeklyPlanActivity extends AppCompatActivity {
         binding = ActivityWeeklyplanBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        ImageButton backB = findViewById(R.id.backB);
+        View backB = findViewById(R.id.backB);
         backB.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 finish();
             }
         });
-
-        binding = ActivityWeeklyplanBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
 
         // WEEK BUTTON
         Button week = (Button) findViewById(R.id.week);

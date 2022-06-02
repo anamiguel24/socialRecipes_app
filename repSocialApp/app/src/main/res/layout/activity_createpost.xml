@@ -72,13 +72,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="179dp"
+                android:layout_height="145dp"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/titleImage"
                     android:layout_width="match_parent"
-                    android:layout_height="139dp"
+                    android:layout_height="110dp"
                     app:srcCompat="@drawable/ic_baseline_image_24" />
 
                 <TextView
@@ -99,6 +99,7 @@
 
             <EditText
                 android:id="@+id/Title"
+                android:textAlignment="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -252,7 +253,7 @@
 
                 <EditText
                     android:id="@+id/caloriesHint"
-                    android:layout_width="282dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="50"
                     android:ems="10"
@@ -261,10 +262,10 @@
 
                 <TextView
                     android:id="@+id/caloriesText"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="50"
-                    android:text="kcal" />
+                    android:text="Kcal" />
             </LinearLayout>
 
             <LinearLayout
@@ -275,41 +276,50 @@
 
                 <EditText
                     android:id="@+id/fatHint"
-                    android:layout_width="282dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="50"
+                    android:layout_weight="28"
                     android:ems="10"
                     android:hint="Fat"
                     android:inputType="number" />
 
                 <TextView
                     android:id="@+id/fatGramsText"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="50"
+                    android:layout_weight="5"
                     android:text="g" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="100">
 
                 <EditText
                     android:id="@+id/proteinHint"
-                    android:layout_width="282dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="50"
+                    android:layout_weight="28"
                     android:ems="10"
                     android:hint="Protein"
                     android:inputType="number" />
 
                 <TextView
                     android:id="@+id/proteinGramsText"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="50"
+                    android:layout_weight="5"
+                    android:text="g" />
+
+                <EditText
+                    android:id="@+id/carbsHint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="28"
+                    android:ems="10"
+                    android:hint="Carbs"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/carbsGramsText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
                     android:text="g" />
             </LinearLayout>
 
@@ -319,21 +329,7 @@
                 android:orientation="horizontal"
                 android:weightSum="100">
 
-                <EditText
-                    android:id="@+id/carbsHint"
-                    android:layout_width="282dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="50"
-                    android:ems="10"
-                    android:hint="Carbs"
-                    android:inputType="number" />
 
-                <TextView
-                    android:id="@+id/carbsGramsText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="50"
-                    android:text="g" />
             </LinearLayout>
 
             <TextView
