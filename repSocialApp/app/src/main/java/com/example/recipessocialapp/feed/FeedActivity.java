@@ -406,6 +406,58 @@ public class FeedActivity extends AppCompatActivity {
         });
 
 
+        ImageView save1 = findViewById(R.id.save1);
+        save1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(clicks1%2==0)
+                    save1.setImageResource(R.drawable.ic_baseline_bookmark_24_pressed);
+                else
+                    save1.setImageResource(R.drawable.ic_baseline_bookmark_24);
+                clicks1++;
+            }
+        });
+
+        ImageView save2 = findViewById(R.id.save2);
+        save2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(clicks1%2==0)
+                    save2.setImageResource(R.drawable.ic_baseline_bookmark_24_pressed);
+                else
+                    save2.setImageResource(R.drawable.ic_baseline_bookmark_24);
+                clicks1++;
+            }
+        });
+
+        ImageView save3 = findViewById(R.id.save3);
+        save3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(clicks1%2==0)
+                    save3.setImageResource(R.drawable.ic_baseline_bookmark_24_pressed);
+                else
+                    save3.setImageResource(R.drawable.ic_baseline_bookmark_24);
+                clicks1++;
+            }
+        });
+
+        ImageView save4 = findViewById(R.id.save4);
+        save4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(clicks1%2==0)
+                    save4.setImageResource(R.drawable.ic_baseline_bookmark_24_pressed);
+                else
+                    save4.setImageResource(R.drawable.ic_baseline_bookmark_24);
+                clicks1++;
+            }
+        });
+
+
+
+
+
         // bottom bar
         BottomNavigationView bottom_bar = findViewById(R.id.bottom_bar);
         bottom_bar.setSelectedItemId(R.id.navigation_home);
