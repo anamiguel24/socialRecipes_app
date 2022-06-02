@@ -16,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
 
 import com.example.recipessocialapp.R;
+import com.example.recipessocialapp.Saved.SavedActivity;
 import com.example.recipessocialapp.createpost.CreatepostActivity;
 import com.example.recipessocialapp.profilePages.UserProfileActivity2;
 import com.example.recipessocialapp.profilePages.UserProfileActivity3;
@@ -111,6 +112,14 @@ public class FeedActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(FeedActivity.this,  SearchRecipesActivity.class));
+            }
+        });
+
+        View saved = findViewById(R.id.savedposts);
+        saved.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(FeedActivity.this,  SavedActivity.class));
             }
         });
 

@@ -40,13 +40,16 @@ public class SavedActivity extends AppCompatActivity {
 
         // bottom bar
         BottomNavigationView bottom_bar = findViewById(R.id.bottom_bar);
-        bottom_bar.setSelectedItemId(R.id.navigation_home);
+        //bottom_bar.setSelectedItemId(R.id.navigation_home);
+        bottom_bar.getMenu().setGroupCheckable(0, false, true);
 
         bottom_bar.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener(){
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item){
                 switch(item.getItemId()){
                     case R.id.navigation_home:
+                        startActivity(new Intent(getApplicationContext(), FeedActivity.class));
+                        overridePendingTransition(R.anim.slide_in_up,R.anim.slide_out_up);
                         return true;
                     case R.id.navigation_shoppinglist:
                         startActivity(new Intent(getApplicationContext(), ShoppingListActivity.class));
