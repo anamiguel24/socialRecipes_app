@@ -15,6 +15,8 @@ import com.example.recipessocialapp.createpost.CreatepostActivity;
 import com.example.recipessocialapp.databinding.ActivityMyprofileBinding;
 import com.example.recipessocialapp.databinding.ActivityUserprofile1Binding;
 import com.example.recipessocialapp.feed.FeedActivity;
+import com.example.recipessocialapp.search.SearchRecipesActivity;
+import com.example.recipessocialapp.settings.MySettingsActivity;
 import com.example.recipessocialapp.shoppinglist.ShoppingListActivity;
 import com.example.recipessocialapp.weeklyplan.WeeklyPlanActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -35,6 +37,14 @@ public class MyProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
+            }
+        });
+
+        View options = findViewById(R.id.options);
+        options.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MyProfileActivity.this,  MySettingsActivity.class));
             }
         });
 
