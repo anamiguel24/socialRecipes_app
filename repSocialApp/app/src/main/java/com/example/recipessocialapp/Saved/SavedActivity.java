@@ -36,38 +36,37 @@ public class SavedActivity extends AppCompatActivity {
                 finish();
             }
         });
-    }
 
-    // bottom
-/*    BottomNavigationView bottom_bar = findViewById(R.id.bottom_bar);
-        bottom_bar.getMenu().setGroupCheckable(0, false, true);
+
+        // bottom bar
+        BottomNavigationView bottom_bar = findViewById(R.id.bottom_bar);
+        bottom_bar.setSelectedItemId(R.id.navigation_home);
 
         bottom_bar.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener(){
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item){
-            switch(item.getItemId()){
-                case R.id.navigation_home:
-                    startActivity(new Intent(getApplicationContext(), FeedActivity.class));
-                    overridePendingTransition(R.anim.slide_in_up,R.anim.slide_out_up);
-                    return true;
-                case R.id.navigation_shoppinglist:
-                    startActivity(new Intent(getApplicationContext(), ShoppingListActivity.class));
-                    overridePendingTransition(R.anim.slide_in_up,R.anim.slide_out_up);
-                    return true;
-                case R.id.navigation_addrecipe:
-                    startActivity(new Intent(getApplicationContext(), CreatepostActivity.class));
-                    overridePendingTransition(R.anim.slide_in_up,R.anim.slide_out_up);
-                    return true;
-                case R.id.navigation_calendar:
-                    startActivity(new Intent(getApplicationContext(), WeeklyPlanActivity.class));
-                    overridePendingTransition(R.anim.slide_in_up,R.anim.slide_out_up);
-                    return true;
-                case R.id.navigation_myprofile:
-                    startActivity(new Intent(getApplicationContext(), MyProfileActivity.class));
-                    overridePendingTransition(R.anim.slide_in_up,R.anim.slide_out_up);
-                    return true;
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item){
+                switch(item.getItemId()){
+                    case R.id.navigation_home:
+                        return true;
+                    case R.id.navigation_shoppinglist:
+                        startActivity(new Intent(getApplicationContext(), ShoppingListActivity.class));
+                        overridePendingTransition(R.anim.slide_in_up,R.anim.slide_out_up);
+                        return true;
+                    case R.id.navigation_addrecipe:
+                        startActivity(new Intent(getApplicationContext(), CreatepostActivity.class));
+                        overridePendingTransition(R.anim.slide_in_up,R.anim.slide_out_up);
+                        return true;
+                    case R.id.navigation_calendar:
+                        startActivity(new Intent(getApplicationContext(), WeeklyPlanActivity.class));
+                        overridePendingTransition(R.anim.slide_in_up,R.anim.slide_out_up);
+                        return true;
+                    case R.id.navigation_myprofile:
+                        startActivity(new Intent(getApplicationContext(), MyProfileActivity.class));
+                        overridePendingTransition(R.anim.slide_in_up,R.anim.slide_out_up);
+                        return true;
+                }
+                return false;
             }
-            return false;
-        }
-    });*/
+        });
+    }
 }

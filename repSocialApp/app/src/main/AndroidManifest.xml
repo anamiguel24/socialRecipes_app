@@ -66,8 +66,12 @@
         <activity
             android:name=".search.SearchRecipesActivity"
             android:label="Search" />
+
         <activity android:name=".createpost.CreatepostActivity"
             android:label="Create Post"/>
+
+        <activity android:name=".Saved.SavedActivity"
+            android:label="Saved"/>
     </application>
 
 </manifest>
