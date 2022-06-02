@@ -18,6 +18,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import com.example.recipessocialapp.R;
 import com.example.recipessocialapp.databinding.ActivityCreatepostBinding;

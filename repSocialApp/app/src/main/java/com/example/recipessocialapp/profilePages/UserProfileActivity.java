@@ -1,9 +1,11 @@
 package com.example.recipessocialapp.profilePages;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
@@ -21,6 +23,7 @@ import com.google.android.material.navigation.NavigationBarView;
 
 public class UserProfileActivity extends AppCompatActivity {
     private ActivityUserprofile1Binding binding;
+    private int taps=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,9 +40,29 @@ public class UserProfileActivity extends AppCompatActivity {
             }
         });
 
+        Button follow = findViewById(R.id.followB);
+        follow.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                if(taps%2==0) {
+                    follow.setText("Following");
+                    follow.setTextSize(8);
+                    follow.setTypeface(follow.getTypeface(), Typeface.BOLD);
+                    follow.setBackgroundColor(getResources().getColor(R.color.white));
+                }
+                else{
+                    follow.setText("Follow");
+                    follow.setTextSize(10);
+                    follow.setTypeface(follow.getTypeface(), Typeface.NORMAL);
+                    follow.setBackgroundColor(getResources().getColor(R.color.teal_700));
+                }
+                taps++;
+            }
+        });
+
         // bottom bar
         BottomNavigationView bottom_bar = findViewById(R.id.bottom_bar);
-        bottom_bar.setSelectedItemId(R.id.navigation_myprofile);
+        bottom_bar.getMenu().setGroupCheckable(0, false, true);
 
         bottom_bar.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener(){
             @Override
@@ -62,6 +85,8 @@ public class UserProfileActivity extends AppCompatActivity {
                         overridePendingTransition(R.anim.slide_in_up,R.anim.slide_out_up);
                         return true;
                     case R.id.navigation_myprofile:
+                        startActivity(new Intent(getApplicationContext(), MyProfileActivity.class));
+                        overridePendingTransition(R.anim.slide_in_up,R.anim.slide_out_up);
                         return true;
                 }
                 return false;

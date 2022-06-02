@@ -2,6 +2,7 @@ package com.example.recipessocialapp.shoppinglist;
 
 import android.content.Intent;
 import android.content.res.ColorStateList;
+import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -31,6 +32,12 @@ import com.google.android.material.navigation.NavigationBarView;
 
 public class ShoppingListActivity extends AppCompatActivity {
     private ActivityShoppinglistBinding binding;
+    private int oiltaps=0;
+    private int tomatotaps=0;
+    private int salttaps=0;
+    private int sugartaps=0;
+    private int pumpkintaps=0;
+    private int eggtaps=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,6 +118,108 @@ public class ShoppingListActivity extends AppCompatActivity {
                 text.setTextColor(getResources().getColor(R.color.white));
                 text.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
                 toast.show();
+            }
+        });
+
+        CheckBox oil = findViewById(R.id.oil);
+        TextView u1 = findViewById(R.id.u1);
+        oil.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                if(oiltaps%2==0) {
+                    oil.setPaintFlags(oil.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                    u1.setPaintFlags(u1.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                }
+                else {
+                    oil.setPaintFlags(oil.getPaintFlags() & (~Paint.STRIKE_THRU_TEXT_FLAG));
+                    u1.setPaintFlags(u1.getPaintFlags() & ~Paint.STRIKE_THRU_TEXT_FLAG);
+                }
+                oiltaps++;
+            }
+        });
+
+        CheckBox tomato = findViewById(R.id.tomato);
+        TextView u2 = findViewById(R.id.u2);
+        tomato.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                if(tomatotaps%2==0) {
+                    tomato.setPaintFlags(tomato.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                    u2.setPaintFlags(u2.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                }
+                else {
+                    tomato.setPaintFlags(tomato.getPaintFlags() & (~Paint.STRIKE_THRU_TEXT_FLAG));
+                    u2.setPaintFlags(u2.getPaintFlags() & ~Paint.STRIKE_THRU_TEXT_FLAG);
+                }
+                tomatotaps++;
+            }
+        });
+
+        CheckBox salt = findViewById(R.id.salt);
+        TextView u3 = findViewById(R.id.u3);
+        salt.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                if(salttaps%2==0) {
+                    salt.setPaintFlags(salt.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                    u3.setPaintFlags(u3.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                }
+                else {
+                    salt.setPaintFlags(salt.getPaintFlags() & (~Paint.STRIKE_THRU_TEXT_FLAG));
+                    u3.setPaintFlags(u3.getPaintFlags() & ~Paint.STRIKE_THRU_TEXT_FLAG);
+                }
+                salttaps++;
+            }
+        });
+
+        CheckBox sugar = findViewById(R.id.sugar);
+        TextView u4 = findViewById(R.id.u4);
+        sugar.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                if(sugartaps%2==0) {
+                    sugar.setPaintFlags(sugar.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                    u4.setPaintFlags(u4.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                }
+                else {
+                    sugar.setPaintFlags(sugar.getPaintFlags() & (~Paint.STRIKE_THRU_TEXT_FLAG));
+                    u4.setPaintFlags(u4.getPaintFlags() & ~Paint.STRIKE_THRU_TEXT_FLAG);
+                }
+                sugartaps++;
+            }
+        });
+
+        CheckBox pumpkin = findViewById(R.id.pumpkin);
+        TextView u5 = findViewById(R.id.u5);
+        pumpkin.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                if(pumpkintaps%2==0) {
+                    pumpkin.setPaintFlags(pumpkin.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                    u5.setPaintFlags(u5.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                }
+                else {
+                    pumpkin.setPaintFlags(pumpkin.getPaintFlags() & (~Paint.STRIKE_THRU_TEXT_FLAG));
+                    u5.setPaintFlags(u5.getPaintFlags() & ~Paint.STRIKE_THRU_TEXT_FLAG);
+                }
+                pumpkintaps++;
+            }
+        });
+
+        CheckBox egg = findViewById(R.id.egg);
+        TextView u6 = findViewById(R.id.u6);
+        egg.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                if(eggtaps%2==0) {
+                    egg.setPaintFlags(egg.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                    u6.setPaintFlags(u6.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                }
+                else {
+                    egg.setPaintFlags(egg.getPaintFlags() & (~Paint.STRIKE_THRU_TEXT_FLAG));
+                    u6.setPaintFlags(u6.getPaintFlags() & ~Paint.STRIKE_THRU_TEXT_FLAG);
+                }
+                eggtaps++;
             }
         });
 

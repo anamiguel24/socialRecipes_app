@@ -5,6 +5,8 @@ import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
@@ -13,6 +15,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import com.example.recipessocialapp.R;
 import com.example.recipessocialapp.createpost.CreatepostActivity;
@@ -111,6 +114,19 @@ public class PostActvity2 extends AppCompatActivity {
                 });
 
                 popup2.show();
+            }
+        });
+
+        CardView cv4 = findViewById(R.id.PostCard4);
+        EditText typedcomment = findViewById(R.id.editTextTextPersonName);
+        TextView oldcom = findViewById(R.id.patrickscomment);
+        Button s = findViewById(R.id.button4);
+
+        s.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                oldcom.setText(typedcomment.getText());
+                cv4.setVisibility(View.VISIBLE);
             }
         });
 
