@@ -5,8 +5,10 @@ import android.content.res.ColorStateList;
 import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -63,6 +65,8 @@ public class ShoppingListActivity extends AppCompatActivity {
                 LinearLayout ly = new LinearLayout(getApplicationContext());
                 ly.setOrientation(LinearLayout.HORIZONTAL);
                 ly.setWeightSum(100);
+                ly.setGravity(Gravity.CENTER_VERTICAL);
+
 
                 CheckBox ingredient = new CheckBox(getApplicationContext());
                 ingredient.setWidth(500);
@@ -82,12 +86,15 @@ public class ShoppingListActivity extends AppCompatActivity {
                     quantity.setText(qty.getText());
 
                 quantity.setTextSize(16);
-                quantity.setHeight(140);
                 quantity.setTextColor(getResources().getColor(R.color.black));
-                quantity.setWidth(500);
+                quantity.setWidth(390);
+
+                ImageView delete = new ImageView(getApplicationContext());
+                delete.setImageResource(R.drawable.ic_baseline_delete_ingredient_24);
 
                 ly.addView(ingredient);
                 ly.addView(quantity);
+                ly.addView(delete);
 
                 custom.addView(ly);
 
@@ -220,6 +227,24 @@ public class ShoppingListActivity extends AppCompatActivity {
                     u6.setPaintFlags(u6.getPaintFlags() & ~Paint.STRIKE_THRU_TEXT_FLAG);
                 }
                 eggtaps++;
+            }
+        });
+
+        ImageView delete1 = findViewById(R.id.delete1);
+        delete1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                View oil = findViewById(R.id.oil_ly);
+                ((ViewGroup) oil.getParent()).removeView(oil);
+            }
+        });
+
+        ImageView delete2 = findViewById(R.id.delete2);
+        delete2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                View tomato = findViewById(R.id.tomato_ly);
+                ((ViewGroup) tomato.getParent()).removeView(tomato);
             }
         });
 

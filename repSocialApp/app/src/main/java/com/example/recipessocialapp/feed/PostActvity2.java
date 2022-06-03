@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -129,6 +130,18 @@ public class PostActvity2 extends AppCompatActivity {
                 cv4.setVisibility(View.VISIBLE);
             }
         });
+
+        Intent intent = getIntent();
+        if(intent.hasExtra("who")) {
+
+            ScrollView sv = findViewById(R.id.scroll_feed);
+            sv.post(new Runnable() {
+                @Override
+                public void run() {
+                    sv.fullScroll(ScrollView.FOCUS_DOWN);
+                }
+            });
+        }
 
         // bottom bar
         BottomNavigationView bottom_bar = findViewById(R.id.bottom_bar);

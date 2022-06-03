@@ -34,6 +34,7 @@ public class FeedActivity extends AppCompatActivity {
     private CharSequence chosen_week="27 June - 03 July";
     private CharSequence chosen_day = "Monday";
     private int clicks1=0,clicks2=0,clicks3=0,clicks4=0;
+    private int sclicks1=0,sclicks2=0,sclicks3=0,sclicks4=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -410,11 +411,33 @@ public class FeedActivity extends AppCompatActivity {
         save1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(clicks1%2==0)
+                if(sclicks1%2==0) {
                     save1.setImageResource(R.drawable.ic_baseline_bookmark_24_pressed);
-                else
+                    Toast toast = Toast.makeText(
+                            getApplicationContext(),
+                            "Recipe saved!",
+                            Toast.LENGTH_SHORT);
+                    View view = toast.getView();
+                    view.getBackground().setColorFilter(getResources().getColor(R.color.teal_700), PorterDuff.Mode.SRC_IN);
+                    TextView text = view.findViewById(android.R.id.message);
+                    text.setTextColor(getResources().getColor(R.color.white));
+                    text.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+                    toast.show();
+                }
+                else {
                     save1.setImageResource(R.drawable.ic_baseline_bookmark_24);
-                clicks1++;
+                    Toast toast = Toast.makeText(
+                            getApplicationContext(),
+                            "Recipe removed!",
+                            Toast.LENGTH_SHORT);
+                    View view = toast.getView();
+                    view.getBackground().setColorFilter(getResources().getColor(R.color.teal_700), PorterDuff.Mode.SRC_IN);
+                    TextView text = view.findViewById(android.R.id.message);
+                    text.setTextColor(getResources().getColor(R.color.white));
+                    text.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+                    toast.show();
+                }
+                sclicks1++;
             }
         });
 
@@ -422,11 +445,33 @@ public class FeedActivity extends AppCompatActivity {
         save2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(clicks1%2==0)
+                if(sclicks2%2==0) {
                     save2.setImageResource(R.drawable.ic_baseline_bookmark_24_pressed);
-                else
+                    Toast toast = Toast.makeText(
+                            getApplicationContext(),
+                            "Recipe saved!",
+                            Toast.LENGTH_SHORT);
+                    View view = toast.getView();
+                    view.getBackground().setColorFilter(getResources().getColor(R.color.teal_700), PorterDuff.Mode.SRC_IN);
+                    TextView text = view.findViewById(android.R.id.message);
+                    text.setTextColor(getResources().getColor(R.color.white));
+                    text.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+                    toast.show();
+                }
+                else {
                     save2.setImageResource(R.drawable.ic_baseline_bookmark_24);
-                clicks1++;
+                    Toast toast = Toast.makeText(
+                            getApplicationContext(),
+                            "Recipe removed!",
+                            Toast.LENGTH_SHORT);
+                    View view = toast.getView();
+                    view.getBackground().setColorFilter(getResources().getColor(R.color.teal_700), PorterDuff.Mode.SRC_IN);
+                    TextView text = view.findViewById(android.R.id.message);
+                    text.setTextColor(getResources().getColor(R.color.white));
+                    text.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+                    toast.show();
+                }
+                sclicks2++;
             }
         });
 
@@ -434,11 +479,33 @@ public class FeedActivity extends AppCompatActivity {
         save3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(clicks1%2==0)
+                if(sclicks3%2==0) {
                     save3.setImageResource(R.drawable.ic_baseline_bookmark_24_pressed);
-                else
+                    Toast toast = Toast.makeText(
+                            getApplicationContext(),
+                            "Recipe saved!",
+                            Toast.LENGTH_SHORT);
+                    View view = toast.getView();
+                    view.getBackground().setColorFilter(getResources().getColor(R.color.teal_700), PorterDuff.Mode.SRC_IN);
+                    TextView text = view.findViewById(android.R.id.message);
+                    text.setTextColor(getResources().getColor(R.color.white));
+                    text.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+                    toast.show();
+                }
+                else {
                     save3.setImageResource(R.drawable.ic_baseline_bookmark_24);
-                clicks1++;
+                    Toast toast = Toast.makeText(
+                            getApplicationContext(),
+                            "Recipe removed!",
+                            Toast.LENGTH_SHORT);
+                    View view = toast.getView();
+                    view.getBackground().setColorFilter(getResources().getColor(R.color.teal_700), PorterDuff.Mode.SRC_IN);
+                    TextView text = view.findViewById(android.R.id.message);
+                    text.setTextColor(getResources().getColor(R.color.white));
+                    text.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+                    toast.show();
+                }
+                sclicks3++;
             }
         });
 
@@ -446,16 +513,75 @@ public class FeedActivity extends AppCompatActivity {
         save4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(clicks1%2==0)
+                if(sclicks4%2==0) {
                     save4.setImageResource(R.drawable.ic_baseline_bookmark_24_pressed);
-                else
+                    Toast toast = Toast.makeText(
+                            getApplicationContext(),
+                            "Recipe saved!",
+                            Toast.LENGTH_SHORT);
+                    View view = toast.getView();
+                    view.getBackground().setColorFilter(getResources().getColor(R.color.teal_700), PorterDuff.Mode.SRC_IN);
+                    TextView text = view.findViewById(android.R.id.message);
+                    text.setTextColor(getResources().getColor(R.color.white));
+                    text.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+                    toast.show();
+                }
+                else {
                     save4.setImageResource(R.drawable.ic_baseline_bookmark_24);
-                clicks1++;
+                    Toast toast = Toast.makeText(
+                            getApplicationContext(),
+                            "Recipe removed!",
+                            Toast.LENGTH_SHORT);
+                    View view = toast.getView();
+                    view.getBackground().setColorFilter(getResources().getColor(R.color.teal_700), PorterDuff.Mode.SRC_IN);
+                    TextView text = view.findViewById(android.R.id.message);
+                    text.setTextColor(getResources().getColor(R.color.white));
+                    text.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+                    toast.show();
+                }
+                sclicks4++;
             }
         });
 
+        View comment1 = findViewById(R.id.comment1);
+        comment1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), PostActvity.class);
+                intent.putExtra("who","comment");
+                startActivity(intent);
+            }
+        });
 
+        View comment2 = findViewById(R.id.comment2);
+        comment2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), PostActvity2.class);
+                intent.putExtra("who","comment");
+                startActivity(intent);
+            }
+        });
 
+        View comment3 = findViewById(R.id.comment3);
+        comment3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), PostActvity3.class);
+                intent.putExtra("who","comment");
+                startActivity(intent);
+            }
+        });
+
+        View comment4 = findViewById(R.id.comment4);
+        comment4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), PostActvity4.class);
+                intent.putExtra("who","comment");
+                startActivity(intent);
+            }
+        });
 
 
         // bottom bar

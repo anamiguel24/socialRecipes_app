@@ -224,6 +224,11 @@
                             android:textSize="15dp" />
 
                         <ImageView
+                            android:id="@+id/comment1"
+                            android:clickable="true"
+                            android:elevation="12dp"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="10"
@@ -271,6 +276,10 @@
 
                         <ImageView
                             android:id="@+id/save1"
+                            android:clickable="true"
+                            android:elevation="12dp"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="10"
@@ -466,6 +475,11 @@
                             android:textSize="15dp" />
 
                         <ImageView
+                            android:id="@+id/comment2"
+                            android:clickable="true"
+                            android:elevation="12dp"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="10"
@@ -513,6 +527,10 @@
 
                         <ImageView
                             android:id="@+id/save2"
+                            android:clickable="true"
+                            android:elevation="12dp"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="10"
@@ -707,6 +725,11 @@
                             android:textSize="15dp" />
 
                         <ImageView
+                            android:id="@+id/comment3"
+                            android:clickable="true"
+                            android:elevation="12dp"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="10"
@@ -754,6 +777,10 @@
 
                         <ImageView
                             android:id="@+id/save3"
+                            android:clickable="true"
+                            android:elevation="12dp"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="10"
@@ -948,6 +975,11 @@
                             android:textSize="15dp" />
 
                         <ImageView
+                            android:id="@+id/comment4"
+                            android:clickable="true"
+                            android:elevation="12dp"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="10"
@@ -994,6 +1026,10 @@
                             app:srcCompat="@drawable/ic_baseline_share_24" />
 
                         <ImageView
+                            android:clickable="true"
+                            android:elevation="12dp"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:id="@+id/save4"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"

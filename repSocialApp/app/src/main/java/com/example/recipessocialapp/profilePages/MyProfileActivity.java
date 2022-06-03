@@ -1,5 +1,6 @@
 package com.example.recipessocialapp.profilePages;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -8,6 +9,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.recipessocialapp.R;
@@ -24,6 +26,37 @@ import com.google.android.material.navigation.NavigationBarView;
 
 public class MyProfileActivity extends AppCompatActivity {
     private ActivityMyprofileBinding binding;
+
+    private AlertDialog AskOption()
+    {
+        AlertDialog myQuittingDialogBox = new AlertDialog.Builder(this)
+                // set message, title, and icon
+                .setTitle("Delete")
+                .setMessage("Are you sure you want to delete this post?")
+                .setIcon(R.drawable.ic_baseline_delete_post_24)
+
+                .setPositiveButton("Delete", new DialogInterface.OnClickListener() {
+
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        //your deleting code
+                        View post3 = findViewById(R.id.Card1);
+                        post3.setVisibility(View.GONE);
+                        dialog.dismiss();
+                    }
+
+                })
+                .setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        View post3 = findViewById(R.id.Card1);
+                        post3.setVisibility(View.VISIBLE);
+                        dialog.dismiss();
+
+                    }
+                })
+                .create();
+
+        return myQuittingDialogBox;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +78,15 @@ public class MyProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MyProfileActivity.this,  MySettingsActivity.class));
+            }
+        });
+
+        View delete3 = findViewById(R.id.delete3);
+        delete3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                AlertDialog diaBox = AskOption();
+                diaBox.show();
             }
         });
 

@@ -1478,7 +1478,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold|italic"
                 android:textSize="17sp"
-                android:text="Friday, 30 June" />
+                android:text="Friday, 1 July" />
 
             <LinearLayout
                 android:id="@+id/linearLayout5"
@@ -1790,7 +1790,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold|italic"
                 android:textSize="17sp"
-                android:text="Saturday, 1 July" />
+                android:text="Saturday, 2 July" />
 
             <LinearLayout
                 android:id="@+id/linearLayout6"
@@ -2102,7 +2102,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold|italic"
                 android:textSize="17sp"
-                android:text="Sunday, 2 July" />
+                android:text="Sunday, 3 July" />
 
             <LinearLayout
                 android:id="@+id/linearLayout7"

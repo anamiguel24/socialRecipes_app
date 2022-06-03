@@ -682,6 +682,8 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_alignParentBottom="true"
+            app:itemIconTint="@drawable/bottom_bar_selector"
+            app:itemTextColor="@drawable/bottom_bar_selector"
             app:menu="@menu/bottom_nav_menu">
         </com.google.android.material.bottomnavigation.BottomNavigationView>
     </androidx.cardview.widget.CardView>
