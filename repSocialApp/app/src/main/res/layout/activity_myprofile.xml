@@ -387,7 +387,8 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="20dp"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:paddingLeft="3dp">
 
                                 <ImageButton
                                     android:id="@+id/p_time3"
@@ -533,7 +534,8 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="20dp"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:paddingLeft="3dp">
 
                                 <ImageButton
                                     android:id="@+id/p_time4"
@@ -689,7 +691,8 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="20dp"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:paddingLeft="3dp">
 
                                 <ImageButton
                                     android:id="@+id/p_time5"
