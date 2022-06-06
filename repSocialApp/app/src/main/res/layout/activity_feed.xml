@@ -22,7 +22,7 @@
         <ImageView
             android:layout_width="105dp"
             android:layout_height="50dp"
-            android:src="@drawable/yummy_logo"></ImageView>
+            android:src="@drawable/yummy_bar"></ImageView>
 
 
     </androidx.appcompat.widget.Toolbar>
