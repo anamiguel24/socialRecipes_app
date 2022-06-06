@@ -234,6 +234,7 @@
                 android:id="@+id/textView42"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
                 android:text="Help"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
@@ -255,6 +256,7 @@
                 android:id="@+id/textView43"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
                 android:text="Delete Account"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
@@ -277,6 +279,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="System of measurement"
+                android:layout_marginStart="10dp"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
         </LinearLayout>
@@ -297,6 +300,7 @@
                 android:id="@+id/textView45"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
                 android:text="Language"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
@@ -318,6 +322,7 @@
                 android:id="@+id/textView46"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
                 android:text="FAQ's"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
