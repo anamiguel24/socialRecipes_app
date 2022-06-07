@@ -17,6 +17,9 @@ import com.example.recipessocialapp.createpost.CreatepostActivity;
 import com.example.recipessocialapp.databinding.ActivityMyprofileBinding;
 import com.example.recipessocialapp.databinding.ActivityUserprofile1Binding;
 import com.example.recipessocialapp.feed.FeedActivity;
+import com.example.recipessocialapp.feed.PostActvity5;
+import com.example.recipessocialapp.feed.PostActvity6;
+import com.example.recipessocialapp.feed.PostActvity7;
 import com.example.recipessocialapp.search.SearchRecipesActivity;
 import com.example.recipessocialapp.settings.MySettingsActivity;
 import com.example.recipessocialapp.shoppinglist.ShoppingListActivity;
@@ -87,6 +90,30 @@ public class MyProfileActivity extends AppCompatActivity {
             public void onClick(View v) {
                 AlertDialog diaBox = AskOption();
                 diaBox.show();
+            }
+        });
+
+        View post1 = findViewById(R.id.Post1);
+        post1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MyProfileActivity.this, PostActvity5.class));
+            }
+        });
+
+        View post2 = findViewById(R.id.Post2);
+        post2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MyProfileActivity.this, PostActvity6.class));
+            }
+        });
+
+        View post3 = findViewById(R.id.Post3);
+        post3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MyProfileActivity.this, PostActvity7.class));
             }
         });
 

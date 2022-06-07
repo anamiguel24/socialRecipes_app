@@ -269,6 +269,10 @@
 
                         <ImageView
                             android:id="@+id/share1"
+                            android:clickable="true"
+                            android:elevation="12dp"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="10"
@@ -520,6 +524,10 @@
 
                         <ImageView
                             android:id="@+id/share2"
+                            android:clickable="true"
+                            android:elevation="12dp"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="10"
@@ -770,6 +778,10 @@
 
                         <ImageView
                             android:id="@+id/share3"
+                            android:clickable="true"
+                            android:elevation="12dp"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="10"
@@ -1020,6 +1032,10 @@
 
                         <ImageView
                             android:id="@+id/share4"
+                            android:clickable="true"
+                            android:elevation="12dp"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="10"

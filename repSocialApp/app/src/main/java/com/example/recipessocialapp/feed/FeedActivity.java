@@ -35,6 +35,7 @@ public class FeedActivity extends AppCompatActivity {
     private CharSequence chosen_day = "Monday";
     private int clicks1=0,clicks2=0,clicks3=0,clicks4=0;
     private int sclicks1=0,sclicks2=0,sclicks3=0,sclicks4=0;
+    private int shareclicks1=0,shareclicks2=0,shareclicks3=0,shareclicks4=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -580,6 +581,78 @@ public class FeedActivity extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), PostActvity4.class);
                 intent.putExtra("who","comment");
                 startActivity(intent);
+            }
+        });
+
+        ImageView share1 = findViewById(R.id.share1);
+        share1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Toast toast = Toast.makeText(
+                        getApplicationContext(),
+                        "Link copied to clipboard!",
+                        Toast.LENGTH_SHORT);
+                View view = toast.getView();
+                view.getBackground().setColorFilter(getResources().getColor(R.color.teal_700), PorterDuff.Mode.SRC_IN);
+                TextView text = view.findViewById(android.R.id.message);
+                text.setTextColor(getResources().getColor(R.color.white));
+                text.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+                toast.show();
+            }
+        });
+
+        ImageView share2 = findViewById(R.id.share2);
+        share2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Toast toast = Toast.makeText(
+                        getApplicationContext(),
+                        "Link copied to clipboard!",
+                        Toast.LENGTH_SHORT);
+                View view = toast.getView();
+                view.getBackground().setColorFilter(getResources().getColor(R.color.teal_700), PorterDuff.Mode.SRC_IN);
+                TextView text = view.findViewById(android.R.id.message);
+                text.setTextColor(getResources().getColor(R.color.white));
+                text.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+                toast.show();
+            }
+        });
+
+        ImageView share3 = findViewById(R.id.share3);
+        share3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Toast toast = Toast.makeText(
+                        getApplicationContext(),
+                        "Link copied to clipboard!",
+                        Toast.LENGTH_SHORT);
+                View view = toast.getView();
+                view.getBackground().setColorFilter(getResources().getColor(R.color.teal_700), PorterDuff.Mode.SRC_IN);
+                TextView text = view.findViewById(android.R.id.message);
+                text.setTextColor(getResources().getColor(R.color.white));
+                text.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+                toast.show();
+            }
+        });
+
+        ImageView share4 = findViewById(R.id.share4);
+        share4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Toast toast = Toast.makeText(
+                        getApplicationContext(),
+                        "Link copied to clipboard!",
+                        Toast.LENGTH_SHORT);
+                View view = toast.getView();
+                view.getBackground().setColorFilter(getResources().getColor(R.color.teal_700), PorterDuff.Mode.SRC_IN);
+                TextView text = view.findViewById(android.R.id.message);
+                text.setTextColor(getResources().getColor(R.color.white));
+                text.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+                toast.show();
             }
         });
 

@@ -20,18 +20,17 @@ import androidx.cardview.widget.CardView;
 
 import com.example.recipessocialapp.R;
 import com.example.recipessocialapp.createpost.CreatepostActivity;
-import com.example.recipessocialapp.databinding.ActivityPost1Binding;
-import com.example.recipessocialapp.databinding.ActivityPost2Binding;
+import com.example.recipessocialapp.databinding.ActivityPost4Binding;
+import com.example.recipessocialapp.databinding.ActivityPost5Binding;
 import com.example.recipessocialapp.profilePages.MyProfileActivity;
 import com.example.recipessocialapp.profilePages.UserProfileActivity;
-import com.example.recipessocialapp.profilePages.UserProfileActivity2;
 import com.example.recipessocialapp.shoppinglist.ShoppingListActivity;
 import com.example.recipessocialapp.weeklyplan.WeeklyPlanActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
-public class PostActvity2 extends AppCompatActivity {
-    private ActivityPost2Binding binding;
+public class PostActvity5 extends AppCompatActivity {
+    private ActivityPost5Binding binding;
     private CharSequence chosen_week="27 June - 03 July";
     private CharSequence chosen_day = "Monday";
     private int sclicks1=0;
@@ -40,7 +39,7 @@ public class PostActvity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityPost2Binding.inflate(getLayoutInflater());
+        binding = ActivityPost5Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         ImageButton backB = findViewById(R.id.backB);
@@ -55,7 +54,7 @@ public class PostActvity2 extends AppCompatActivity {
         user1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(PostActvity2.this,  UserProfileActivity2.class));
+                startActivity(new Intent(PostActvity5.this,  UserProfileActivity.class));
             }
         });
 
@@ -119,7 +118,7 @@ public class PostActvity2 extends AppCompatActivity {
             }
         });
 
-        CardView cv4 = findViewById(R.id.PostCard4);
+        CardView cv5 = findViewById(R.id.PostCard5);
         EditText typedcomment = findViewById(R.id.editTextTextPersonName);
         TextView oldcom = findViewById(R.id.patrickscomment);
         Button s = findViewById(R.id.button4);
@@ -128,7 +127,7 @@ public class PostActvity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 oldcom.setText(typedcomment.getText());
-                cv4.setVisibility(View.VISIBLE);
+                cv5.setVisibility(View.VISIBLE);
             }
         });
 

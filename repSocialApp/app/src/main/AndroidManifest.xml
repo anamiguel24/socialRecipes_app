@@ -78,6 +78,18 @@
         <activity
             android:name=".settings.MySettingsActivity"
             android:label="Settings" />
+
+        <activity
+            android:name=".feed.PostActvity5"
+            android:label="Settings" />
+
+        <activity
+            android:name=".feed.PostActvity6"
+            android:label="Settings" />
+
+        <activity
+            android:name=".feed.PostActvity7"
+            android:label="Settings" />
     </application>
 
 </manifest>
