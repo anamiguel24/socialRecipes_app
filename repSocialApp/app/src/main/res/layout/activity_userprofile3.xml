@@ -104,13 +104,12 @@
 
         <ImageButton
             android:id="@+id/profileB"
-            android:layout_width="67dp"
-            android:layout_height="67dp"
-            android:layout_marginEnd="22dp"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="24dp"
             android:background="?attr/selectableItemBackground"
-            android:padding="8dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ic_baseline_account_circle_24"
+            android:scaleType="centerCrop"
+            android:src="@drawable/emily"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
