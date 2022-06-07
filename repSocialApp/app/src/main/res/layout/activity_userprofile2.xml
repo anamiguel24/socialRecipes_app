@@ -102,20 +102,6 @@
             app:layout_constraintStart_toStartOf="@+id/textView2"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-        <ImageButton
-            android:id="@+id/profileB"
-            android:layout_width="67dp"
-            android:layout_height="67dp"
-            android:layout_marginEnd="22dp"
-            android:background="?attr/selectableItemBackground"
-            android:padding="8dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ic_baseline_account_circle_24"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.098" />
-
         <!--<LinearLayout
             android:id="@+id/linearLayout3"
             android:layout_width="270dp"
@@ -238,6 +224,19 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/profileB"
             app:layout_constraintVertical_bias="0.266" />-->
+
+        <ImageButton
+            android:id="@+id/profileB"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="22dp"
+            android:background="?attr/selectableItemBackground"
+            android:scaleType="centerCrop"
+            android:src="@drawable/jennifer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.068" />
 
         <LinearLayout
             android:id="@+id/linearLayout3"

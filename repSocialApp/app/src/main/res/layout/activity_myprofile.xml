@@ -23,7 +23,11 @@
         android:id="@+id/ll1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
     //android:layout_weight="5"
 
 
@@ -32,7 +36,6 @@
             android:id="@+id/backB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:layout_marginStart="10dp"
             android:layout_marginTop="16dp"
             android:background="?attr/selectableItemBackground"
@@ -47,7 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="19dp"
             android:gravity="center_horizontal"
             android:letterSpacing="0.025"
             android:text="My profile (\@patricks14)"
@@ -62,7 +65,7 @@
             android:id="@+id/options"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:background="?attr/selectableItemBackground"
@@ -121,13 +124,12 @@
 
             <ImageButton
                 android:id="@+id/profileB"
-                android:layout_width="67dp"
-                android:layout_height="67dp"
-                android:layout_marginEnd="22dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="26dp"
                 android:background="?attr/selectableItemBackground"
-                android:padding="8dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_baseline_account_circle_24"
+                android:src="@drawable/patrick"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
