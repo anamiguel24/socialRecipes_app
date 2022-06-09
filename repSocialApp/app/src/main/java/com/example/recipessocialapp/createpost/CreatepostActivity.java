@@ -150,6 +150,8 @@ public class CreatepostActivity extends AppCompatActivity {
                 EditText typed_tag = findViewById(R.id.TypedTag);
                 tag.setText("#" + typed_tag.getText());
 
+                typed_tag.getText().clear();
+
                 ly.addView(tag);
 
                 custom2.addView(ly);
