@@ -42,7 +42,7 @@ public class MyProfileActivity extends AppCompatActivity {
 
                     public void onClick(DialogInterface dialog, int whichButton) {
                         //your deleting code
-                        View post3 = findViewById(R.id.Card1);
+                        View post3 = findViewById(R.id.Post3);
                         post3.setVisibility(View.GONE);
                         dialog.dismiss();
                     }
@@ -50,7 +50,7 @@ public class MyProfileActivity extends AppCompatActivity {
                 })
                 .setNegativeButton("cancel", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-                        View post3 = findViewById(R.id.Card1);
+                        View post3 = findViewById(R.id.Post3);
                         post3.setVisibility(View.VISIBLE);
                         dialog.dismiss();
 
