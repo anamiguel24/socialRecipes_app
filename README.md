@@ -1,4 +1,4 @@
-# socialRecipes_app
+# Social application for recipe-sharing 
 
 Development of an interactive application following a human-centric approach.
 
